@@ -1718,11 +1718,11 @@
             <div class="page-header">
                 <div class="page-header-left d-flex align-items-center">
                     <div class="page-header-title">
-                        <h5 class="m-b-10">Invoice</h5>
+                        <h5 class="m-b-10">Registration</h5>
                     </div>
                     <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item">Create</li>
+                        <li class="breadcrumb-item"><a href="invoice-create.html">Patient Registration</a></li>
+    
                     </ul>
                 </div>
                 <div class="page-header-right ms-auto">
@@ -1733,16 +1733,7 @@
                                 <span>Back</span>
                             </a>
                         </div>
-                        <div class="d-flex align-items-center gap-2 page-header-right-items-wrapper">
-                            <a href="javascript:void(0);" class="btn btn-light-brand successAlertMessage">
-                                <i class="feather-layers me-2"></i>
-                                <span>Save as Draft</span>
-                            </a>
-                            <a href="javascript:void(0);" class="btn btn-primary successAlertMessage">
-                                <i class="feather-save me-2"></i>
-                                <span>Save Invoice</span>
-                            </a>
-                        </div>
+                       
                     </div>
                     <div class="d-md-none d-flex align-items-center">
                         <a href="javascript:void(0)" class="page-header-right-open-toggle">
@@ -1751,16 +1742,45 @@
                     </div>
                 </div>
             </div>
+
+
             <!-- [ page-header ] end -->
+
+
+ <div class="px-4 row justify-content-between">
+                                    <div class="col-xl-3">
+                                        <div class="form-group mb-3">
+                                           <p>
+        <div class="input-group search-form">
+                                <span class="input-group-text">
+                                    <i class="feather-search fs-6 text-muted"></i>
+                                </span>
+                                <input type="text" class="form-control search-input-field" placeholder="Search Patient by MRN (Reattendance) ..." />
+                                <span class="input-group-text">
+                                  Search
+                                </span>
+                            </div>
+
+</p>
+
+                                      
+                                        </div>
+                                    </div>
+
+
+
+
+
+
             <!-- [ Main Content ] start -->
             <div class="main-content">
                 <div class="row">
                     <div class="col-xl-8">
                         <div class="card invoice-container">
                             <div class="card-header">
-                                <h5>Invoice Create</h5>
+                                <h5>Patient Information</h5>
                                 <div class="dropdown">
-                                    <a href="javascript:void(0)" class="btn btn-light-brand dropdown-toggle" data-bs-toggle="dropdown" data-bs-offset="0,25">Invoice Templates</a>
+                                    <a href="javascript:void(0)" class="btn btn-light-brand dropdown-toggle" data-bs-toggle="dropdown" data-bs-offset="0,25">Preview</a>
                                     <ul class="dropdown-menu">
                                         <li>
                                             <a href="javascript:void(0);" class="dropdown-item active">Default</a>
@@ -1790,49 +1810,363 @@
                                     </ul>
                                 </div>
                             </div>
+
+
+
+                           
+
                             <div class="card-body p-0">
                                 <div class="px-4 pt-4">
                                     <div class="d-md-flex align-items-center justify-content-between">
                                         <div class="mb-4 mb-md-0 your-brand">
                                             <div class="wd-100 ht-100 position-relative overflow-hidden border border-gray-2 rounded">
-                                                <img src="assets/images/logo-abbr.png" class="upload-pic img-fluid rounded h-100 w-100" alt="">
+                                                <img src="assets/images/avatar/profile.JPG" class="upload-pic img-fluid rounded h-100 w-100" alt="">
                                                 <div class="position-absolute start-50 top-50 end-0 bottom-0 translate-middle h-100 w-100 hstack align-items-center justify-content-center c-pointer upload-button">
                                                     <i class="feather feather-camera" aria-hidden="true"></i>
                                                 </div>
                                                 <input class="file-upload" type="file" accept="image/*">
                                             </div>
-                                            <div class="fs-12 text-muted mt-2">* Upload your brand</div>
+                                         
                                         </div>
                                         <div class="d-md-flex align-items-center justify-content-end gap-4">
                                             <div class="form-group mb-3 mb-md-0">
-                                                <label class="form-label">Issue Date:</label>
-                                                <input id="issueDate" class="form-control" placeholder="Issue date...">
+                                                <label class="form-label">First Name:</label>
+                                                <input id="text" class="form-control" placeholder="First Name ...">
                                             </div>
                                             <div class="form-group">
-                                                <label class="form-label">Due Date:</label>
-                                                <input id="dueDate" class="form-control" placeholder="Due date...">
+                                                <label class="form-label">Last Name:</label>
+                                                <input id="text" class="form-control" placeholder="Last Name ...">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                               
+
+                                <hr class="border-dashed">
+<div class="px-4 row justify-content-between">
+                                    <div class="col-xl-3">
+                                        <div class="form-group mb-3">
+                                          
+                                           <label for="InvoiceLabel" class="form-label">Sex:</label>  <form>
+ 
+  <label>
+   <p> <input type="radio" name="choice" value="option1"> Male
+  </p></label>
+  <br>
+  <label>
+    <p>
+    <input type="radio" name="choice" value="option2"> Female
+    </p>
+  </label>
+</form>
+                                        </div>
+                                    </div>
+
+
+                                     <hr class="border-dashed">
+<div class="px-4 row justify-content-between">
+                                    <div class="col-xl-3">
+                                        <div class="form-group mb-3">
+                                          
+                                          <label for="html5-datetime-local-input" class="col-md-2 col-form-label"></label>
+                <div class="col-md-10">
+                 <a href="javascript:void(0);" class="badge bg-soft-success text-success">Date of Birth (DOB):</a>
+                                <input
+                    class="form-control"
+                    type="datetime-local"
+                    
+                    id="html5-datetime-local-input"
+                    required
+                  />
+                </div>        </div>
+                                    </div>
+                                    
+ 
                                 <hr class="border-dashed">
                                 <div class="px-4 row justify-content-between">
                                     <div class="col-xl-3">
                                         <div class="form-group mb-3">
-                                            <label for="InvoiceLabel" class="form-label">Invoice Label</label>
-                                            <input type="text" class="form-control" id="InvoiceLabel" placeholder="Duralux Invoice">
+                                            <label for="InvoiceLabel" class="form-label">Phone Number:</label>
+                                            <input type="number" class="form-control" id="InvoiceLabel" placeholder="Phone No.">
                                         </div>
                                     </div>
+
+
+                                <div class="px-4 row justify-content-between">
                                     <div class="col-xl-3">
                                         <div class="form-group mb-3">
-                                            <label for="InvoiceNumber" class="form-label">Invoice Number</label>
-                                            <input type="text" class="form-control" id="InvoiceNumber" placeholder="#NXL2023">
+                                            <label for="InvoiceLabel" class="form-label">Citizenship:</label>
+                                           <select name="country" class="form-control" required>
+									<option value=""><span class="flag-icon flag-icon-gr"></span>Select Country</option>
+									<option value="Afghanistan">Afghanistan</option>
+									<option value="Albania">Albania</option>
+									<option value="Algeria">Algeria</option>
+									<option value="American Samoa">American Samoa</option>
+									<option value="Andorra">Andorra</option>
+									<option value="Angola">Angola</option>
+									<option value="Anguilla">Anguilla</option>
+									<option value="Antartica">Antarctica</option>
+									<option value="Antigua and Barbuda">Antigua and Barbuda</option>
+									<option value="Argentina">Argentina</option>
+									<option value="Armenia">Armenia</option>
+									<option value="Aruba">Aruba</option>
+									<option value="Australia">Australia</option>
+									<option value="Austria">Austria</option>
+									<option value="Azerbaijan">Azerbaijan</option>
+									<option value="Bahamas">Bahamas</option>
+									<option value="Bahrain">Bahrain</option>
+									<option value="Bangladesh">Bangladesh</option>
+									<option value="Barbados">Barbados</option>
+									<option value="Belarus">Belarus</option>
+									<option value="Belgium">Belgium</option>
+									<option value="Belize">Belize</option>
+									<option value="Benin">Benin</option>
+									<option value="Bermuda">Bermuda</option>
+									<option value="Bhutan">Bhutan</option>
+									<option value="Bolivia">Bolivia</option>
+									<option value="Bosnia and Herzegowina">Bosnia and Herzegowina</option>
+									<option value="Botswana">Botswana</option>
+									<option value="Bouvet Island">Bouvet Island</option>
+									<option value="Brazil">Brazil</option>
+									<option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+									<option value="Brunei Darussalam">Brunei Darussalam</option>
+									<option value="Bulgaria">Bulgaria</option>
+									<option value="Burkina Faso">Burkina Faso</option>
+									<option value="Burundi">Burundi</option>
+									<option value="Cambodia">Cambodia</option>
+									<option value="Cameroon">Cameroon</option>
+									<option value="Canada">Canada</option>
+									<option value="Cape Verde">Cape Verde</option>
+									<option value="Cayman Islands">Cayman Islands</option>
+									<option value="Central African Republic">Central African Republic</option>
+									<option value="Chad">Chad</option>
+									<option value="Chile">Chile</option>
+									<option value="China">China</option>
+									<option value="Christmas Island">Christmas Island</option>
+									<option value="Cocos Islands">Cocos (Keeling) Islands</option>
+									<option value="Colombia">Colombia</option>
+									<option value="Comoros">Comoros</option>
+									<option value="Congo">Congo</option>
+									<option value="Congo">Congo, the Democratic Republic of the</option>
+									<option value="Cook Islands">Cook Islands</option>
+									<option value="Costa Rica">Costa Rica</option>
+									<option value="Cota D'Ivoire">Cote d'Ivoire</option>
+									<option value="Croatia">Croatia (Hrvatska)</option>
+									<option value="Cuba">Cuba</option>
+									<option value="Cyprus">Cyprus</option>
+									<option value="Czech Republic">Czech Republic</option>
+									<option value="Denmark">Denmark</option>
+									<option value="Djibouti">Djibouti</option>
+									<option value="Dominica">Dominica</option>
+									<option value="Dominican Republic">Dominican Republic</option>
+									<option value="East Timor">East Timor</option>
+									<option value="Ecuador">Ecuador</option>
+									<option value="Egypt">Egypt</option>
+									<option value="El Salvador">El Salvador</option>
+									<option value="Equatorial Guinea">Equatorial Guinea</option>
+									<option value="Eritrea">Eritrea</option>
+									<option value="Estonia">Estonia</option>
+									<option value="Ethiopia">Ethiopia</option>
+									<option value="Falkland Islands">Falkland Islands (Malvinas)</option>
+									<option value="Faroe Islands">Faroe Islands</option>
+									<option value="Fiji">Fiji</option>
+									<option value="Finland">Finland</option>
+									<option value="France">France</option>
+									<option value="France Metropolitan">France, Metropolitan</option>
+									<option value="French Guiana">French Guiana</option>
+									<option value="French Polynesia">French Polynesia</option>
+									<option value="French Southern Territories">French Southern Territories</option>
+									<option value="Gabon">Gabon</option>
+									<option value="Gambia">Gambia</option>
+									<option value="Georgia">Georgia</option>
+									<option value="Germany">Germany</option>
+									<option value="Ghana">Ghana</option>
+									<option value="Gibraltar">Gibraltar</option>
+									<option value="Greece">Greece</option>
+									<option value="Greenland">Greenland</option>
+									<option value="Grenada">Grenada</option>
+									<option value="Guadeloupe">Guadeloupe</option>
+									<option value="Guam">Guam</option>
+									<option value="Guatemala">Guatemala</option>
+									<option value="Guinea">Guinea</option>
+									<option value="Guinea-Bissau">Guinea-Bissau</option>
+									<option value="Guyana">Guyana</option>
+									<option value="Haiti">Haiti</option>
+									<option value="Heard and McDonald Islands">Heard and Mc Donald Islands</option>
+									<option value="Holy See">Holy See (Vatican City State)</option>
+									<option value="Honduras">Honduras</option>
+									<option value="Hong Kong">Hong Kong</option>
+									<option value="Hungary">Hungary</option>
+									<option value="Iceland">Iceland</option>
+									<option value="India">India</option>
+									<option value="Indonesia">Indonesia</option>
+									<option value="Iran">Iran (Islamic Republic of)</option>
+									<option value="Iraq">Iraq</option>
+									<option value="Ireland">Ireland</option>
+									<option value="Israel">Israel</option>
+									<option value="Italy">Italy</option>
+									<option value="Jamaica">Jamaica</option>
+									<option value="Japan">Japan</option>
+									<option value="Jordan">Jordan</option>
+									<option value="Kazakhstan">Kazakhstan</option>
+									<option value="Kenya">Kenya</option>
+									<option value="Kiribati">Kiribati</option>
+									<option value="Korea">Korea, Republic of</option>
+									<option value="Kuwait">Kuwait</option>
+									<option value="Kyrgyzstan">Kyrgyzstan</option>
+									<option value="Lao">Lao People's Democratic Republic</option>
+									<option value="Latvia">Latvia</option>
+									<option value="Lebanon">Lebanon</option>
+									<option value="Lesotho">Lesotho</option>
+									<option value="Liberia">Liberia</option>
+									<option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+									<option value="Liechtenstein">Liechtenstein</option>
+									<option value="Lithuania">Lithuania</option>
+									<option value="Luxembourg">Luxembourg</option>
+									<option value="Macau">Macau</option>
+									<option value="Macedonia">Macedonia, The Former Yugoslav Republic of</option>
+									<option value="Madagascar">Madagascar</option>
+									<option value="Malawi">Malawi</option>
+									<option value="Malaysia">Malaysia</option>
+									<option value="Maldives">Maldives</option>
+									<option value="Mali">Mali</option>
+									<option value="Malta">Malta</option>
+									<option value="Marshall Islands">Marshall Islands</option>
+									<option value="Martinique">Martinique</option>
+									<option value="Mauritania">Mauritania</option>
+									<option value="Mauritius">Mauritius</option>
+									<option value="Mayotte">Mayotte</option>
+									<option value="Mexico">Mexico</option>
+									<option value="Micronesia">Micronesia, Federated States of</option>
+									<option value="Moldova">Moldova, Republic of</option>
+									<option value="Monaco">Monaco</option>
+									<option value="Mongolia">Mongolia</option>
+									<option value="Montserrat">Montserrat</option>
+									<option value="Morocco">Morocco</option>
+									<option value="Mozambique">Mozambique</option>
+									<option value="Myanmar">Myanmar</option>
+									<option value="Namibia">Namibia</option>
+									<option value="Nauru">Nauru</option>
+									<option value="Nepal">Nepal</option>
+									<option value="Netherlands">Netherlands</option>
+									<option value="Netherlands Antilles">Netherlands Antilles</option>
+									<option value="New Caledonia">New Caledonia</option>
+									<option value="New Zealand">New Zealand</option>
+									<option value="Nicaragua">Nicaragua</option>
+									<option value="Niger">Niger</option>
+									<option value="Nigeria">Nigeria</option>
+									<option value="Niue">Niue</option>
+									<option value="Norfolk Island">Norfolk Island</option>
+									<option value="North Korea">North Korea</option>
+									<option value="Northern Mariana Islands">Northern Mariana Islands</option>
+									<option value="Norway">Norway</option>
+									<option value="Oman">Oman</option>
+									<option value="Pakistan">Pakistan</option>
+									<option value="Palau">Palau</option>
+									<option value="Panama">Panama</option>
+									<option value="Papua New Guinea">Papua New Guinea</option>
+									<option value="Paraguay">Paraguay</option>
+									<option value="Peru">Peru</option>
+									<option value="Philippines">Philippines</option>
+									<option value="Pitcairn">Pitcairn</option>
+									<option value="Poland">Poland</option>
+									<option value="Portugal">Portugal</option>
+									<option value="Puerto Rico">Puerto Rico</option>
+									<option value="Qatar">Qatar</option>
+									<option value="Reunion">Reunion</option>
+									<option value="Romania">Romania</option>
+									<option value="Russia">Russian Federation</option>
+									<option value="Rwanda">Rwanda</option>
+									<option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option> 
+									<option value="Saint LUCIA">Saint LUCIA</option>
+									<option value="Saint Vincent">Saint Vincent and the Grenadines</option>
+									<option value="Samoa">Samoa</option>
+									<option value="San Marino">San Marino</option>
+									<option value="Sao Tome and Principe">Sao Tome and Principe</option> 
+									<option value="Saudi Arabia">Saudi Arabia</option>
+									<option value="Senegal">Senegal</option>
+									<option value="Seychelles">Seychelles</option>
+									<option value="Sierra">Sierra Leone</option>
+									<option value="Singapore">Singapore</option>
+									<option value="Slovakia">Slovakia (Slovak Republic)</option>
+									<option value="Slovenia">Slovenia</option>
+									<option value="Solomon Islands">Solomon Islands</option>
+									<option value="Somalia">Somalia</option>
+									<option value="South Africa">South Africa</option>
+									<option value="South Georgia">South Georgia and the South Sandwich Islands</option>
+									<option value="South Korea">South Korea</option>
+									<option value="South Sudan">South Sudan</option>
+									<option value="Span">Spain</option>
+									<option value="SriLanka">Sri Lanka</option>
+									<option value="St. Helena">St. Helena</option>
+									<option value="St. Pierre and Miguelon">St. Pierre and Miquelon</option>
+									<option value="Sudan">Sudan</option>
+									<option value="Suriname">Suriname</option>
+									<option value="Svalbard">Svalbard and Jan Mayen Islands</option>
+									<option value="Swaziland">Swaziland</option>
+									<option value="Sweden">Sweden</option>
+									<option value="Switzerland">Switzerland</option>
+									<option value="Syria">Syrian Arab Republic</option>
+									<option value="Taiwan">Taiwan, Province of China</option>
+									<option value="Tajikistan">Tajikistan</option>
+									<option value="Tanzania">Tanzania, United Republic of</option>
+									<option value="Thailand">Thailand</option>
+									<option value="Togo">Togo</option>
+									<option value="Tokelau">Tokelau</option>
+									<option value="Tonga">Tonga</option>
+									<option value="Trinidad and Tobago">Trinidad and Tobago</option>
+									<option value="Tunisia">Tunisia</option>
+									<option value="Turkey">Turkey</option>
+									<option value="Turkmenistan">Turkmenistan</option>
+									<option value="Turks and Caicos">Turks and Caicos Islands</option>
+									<option value="Tuvalu">Tuvalu</option>
+									<option value="Uganda">Uganda</option>
+									<option value="Ukraine">Ukraine</option>
+									<option value="United Arab Emirates">United Arab Emirates</option>
+									<option value="United Kingdom">United Kingdom</option>
+									<option value="United States">United States</option>
+									<option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+									<option value="Uruguay">Uruguay</option>
+									<option value="Uzbekistan">Uzbekistan</option>
+									<option value="Vanuatu">Vanuatu</option>
+									<option value="Venezuela">Venezuela</option>
+									<option value="Vietnam">Viet Nam</option>
+									<option value="Virgin Islands (British)">Virgin Islands (British)</option>
+									<option value="Virgin Islands (U.S)">Virgin Islands (U.S.)</option>
+									<option value="Wallis and Futana Islands">Wallis and Futuna Islands</option>
+									<option value="Western Sahara">Western Sahara</option>
+									<option value="Yemen">Yemen</option>
+									<option value="Yugoslavia">Yugoslavia</option>
+									<option value="Zambia">Zambia</option>
+									<option value="Zimbabwe">Zimbabwe</option>
+							</select>
+                                           
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-xl-3">
+                                        <div class="form-group mb-3">
+                                            <label for="InvoiceNumber" class="form-label">Region:</label>
+                                            <input type="text" class="form-control" id="InvoiceNumber" placeholder="Region">
+                                        </div>
+                                    </div>
+                                     <div class="col-xl-3">
+                                        <div class="form-group mb-3">
+                                            <label for="InvoiceNumber" class="form-label">District:</label>
+                                            <input type="text" class="form-control" id="InvoiceNumber" placeholder="District">
+                                        </div>
+                                    </div>
+                                     <div class="col-xl-3">
+                                        <div class="form-group mb-3">
+                                            <label for="InvoiceNumber" class="form-label">Division:</label>
+                                            <input type="text" class="form-control" id="InvoiceNumber" placeholder="Divisionn">
                                         </div>
                                     </div>
                                     <div class="col-xl-6">
                                         <div class="form-group mb-3">
-                                            <label for="InvoiceProduct" class="form-label">Invoice Product</label>
-                                            <input type="text" class="form-control" id="InvoiceProduct" placeholder="Product Name">
+                                            <label for="InvoiceProduct" class="form-label">Street:</label>
+                                            <input type="text" class="form-control" id="InvoiceProduct" placeholder="Street">
                                         </div>
                                     </div>
                                 </div>
@@ -1840,461 +2174,185 @@
                                 <div class="row px-4 justify-content-between">
                                     <div class="col-xl-5 mb-4 mb-sm-0">
                                         <div class="mb-4">
-                                            <h6 class="fw-bold">Invoice From:</h6>
-                                            <span class="fs-12 text-muted">Send an invoice and get paid</span>
+                                            <h6 class="fw-bold">Patient Visit:</h6>
+                                            <span class="fs-12 text-muted">Initiate Patient Visit
+                                             </span>
                                         </div>
-                                        <div class="form-group row mb-3">
-                                            <label for="InvoiceName" class="col-sm-3 col-form-label">Name</label>
-                                            <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="InvoiceName" placeholder="Business Name">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row mb-3">
-                                            <label for="InvoiceEmail" class="col-sm-3 col-form-label">Email</label>
-                                            <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="InvoiceEmail" placeholder="Email Address">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row mb-3">
-                                            <label for="InvoicePhone" class="col-sm-3 col-form-label">Phone</label>
-                                            <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="InvoicePhone" placeholder="Enter Phone">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="InvoiceAddress" class="col-sm-3 col-form-label">Address</label>
-                                            <div class="col-sm-9">
-                                                <textarea rows="5" class="form-control" id="InvoiceAddress" placeholder="Enter Address"></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-5">
-                                        <div class="mb-4">
-                                            <h6 class="fw-bold">Invoice To:</h6>
-                                            <span class="fs-12 text-muted">Send an invoice and get paid</span>
-                                        </div>
-                                        <div class="form-group row mb-3">
-                                            <label for="ClientName" class="col-sm-3 col-form-label">Name</label>
-                                            <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="ClientName" placeholder="Business Name">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row mb-3">
-                                            <label for="ClientEmail" class="col-sm-3 col-form-label">Email</label>
-                                            <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="ClientEmail" placeholder="Email Address">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row mb-3">
-                                            <label for="ClientPhone" class="col-sm-3 col-form-label">Phone</label>
-                                            <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="ClientPhone" placeholder="Enter Phone">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="ClientAddress" class="col-sm-3 col-form-label">Address</label>
-                                            <div class="col-sm-9">
-                                                <textarea rows="5" class="form-control" id="ClientAddress" placeholder="Enter Address"></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr class="border-dashed">
-                                <div class="px-4 clearfix">
-                                    <div class="mb-4 d-flex align-items-center justify-content-between">
-                                        <div>
-                                            <h6 class="fw-bold">Add Items:</h6>
-                                            <span class="fs-12 text-muted">Add items to invoice</span>
-                                        </div>
-                                        <div class="avatar-text avatar-sm" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Informations">
-                                            <i class="feather feather-info"></i>
-                                        </div>
-                                    </div>
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered overflow-hidden" id="tab_logic">
-                                            <thead>
-                                                <tr class="single-item">
-                                                    <th class="text-center">#</th>
-                                                    <th class="text-center wd-450">Product</th>
-                                                    <th class="text-center wd-150">Qty</th>
-                                                    <th class="text-center wd-150">Price</th>
-                                                    <th class="text-center wd-150">Total</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr id="addr0">
-                                                    <td>1</td>
-                                                    <td><input type="text" name="product[]" placeholder="Enter Product Name" class="form-control"></td>
-                                                    <td><input type="number" name="qty[]" placeholder="Enter Qty" class="form-control qty" step="1" min="1"></td>
-                                                    <td><input type="number" name="price[]" placeholder="Enter Unit Price" class="form-control price" step="1.00" min="1"></td>
-                                                    <td><input type="number" name="total[]" placeholder="0.00" class="form-control total" readonly=""></td>
-                                                </tr>
-                                                <tr id="addr1">
-                                                    <td>2</td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="d-flex justify-content-end gap-2 mt-3">
-                                        <button id="delete_row" class="btn btn-sm bg-soft-danger text-danger">Delete</button>
-                                        <button id="add_row" class="btn btn-sm btn-primary">Add Items</button>
-                                    </div>
-                                </div>
-                                <hr class="border-dashed">
-                                <div class="px-4 pb-4">
-                                    <div class="form-group">
-                                        <label for="InvoiceNote" class="form-label">Invoice Note:</label>
-                                        <textarea rows="6" class="form-control" id="InvoiceNote" placeholder="It was a pleasure working with you and your team. We hope you will keep us in mind for future freelance projects. Thank You!"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4">
-                        <div class="card stretch stretch-full">
-                            <div class="card-body">
-                                <div class="mb-4 d-flex align-items-center justify-content-between">
-                                    <div>
-                                        <h6 class="fw-bold">Grand Total:</h6>
-                                        <span class="fs-12 text-muted">Grand total invoice</span>
-                                    </div>
-                                    <div class="avatar-text avatar-sm" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Grand total invoice">
-                                        <i class="feather feather-info"></i>
-                                    </div>
-                                </div>
-                                <div class="table-responsive">
-                                    <table class="table table-bordered" id="tab_logic_total">
-                                        <tbody>
-                                            <tr class="single-item">
-                                                <th class="text-dark fw-semibold">Sub Total</th>
-                                                <td class="w-25"><input type="number" name="sub_total" placeholder="0.00" class="form-control border-0 bg-transparent p-0" id="sub_total" readonly=""></td>
-                                            </tr>
-                                            <tr class="single-item">
-                                                <th class="text-dark fw-semibold">Tax</th>
-                                                <td class="w-25">
-                                                    <div class="input-group mb-2 mb-sm-0">
-                                                        <input type="number" class="form-control border-0 bg-transparent p-0" id="tax" placeholder="0">
-                                                        <div class="input-group-addon">%</div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="single-item">
-                                                <th class="text-dark fw-semibold">Tax Amount</th>
-                                                <td class="w-25"><input type="number" name="tax_amount" id="tax_amount" placeholder="0.00" class="form-control border-0 bg-transparent p-0" readonly=""></td>
-                                            </tr>
-                                            <tr class="single-item">
-                                                <th class="text-dark fw-semibold bg-gray-100">Grand Total</th>
-                                                <td class="bg-gray-100 w-25"><input type="number" name="total_amount" id="total_amount" placeholder="0.00" class="form-control border-0 bg-transparent p-0 fw-bolder text-dark" readonly=""></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card stretch stretch-full">
-                            <div class="card-body">
-                                <div class="mb-4 d-flex align-items-center justify-content-between">
-                                    <div>
-                                        <h6 class="fw-bold">Payment Methord:</h6>
-                                        <span class="fs-12 text-muted">Select payment methord</span>
-                                    </div>
-                                    <div class="avatar-text avatar-sm" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Select payment methord">
-                                        <i class="feather feather-info"></i>
-                                    </div>
-                                </div>
-                                <!-- Nav tabs -->
-                                <ul class="nav nav-justified gap-1">
-                                    <li class="nav-item border border-gray-500">
-                                        <a href="javascript:void(0);" class="nav-link px-2 active" data-bs-toggle="tab" data-bs-target="#pamymetDebitCardTab">
-                                            <i class="bi bi-credit-card-fill"></i>
-                                            <span class="ms-2">Debit Card</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item border border-gray-500">
-                                        <a href="javascript:void(0);" class="nav-link px-2" data-bs-toggle="tab" data-bs-target="#pamymetPaypalTab">
-                                            <i class="bi bi-paypal"></i>
-                                            <span class="ms-2">Paypal</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <!-- Tab panes -->
-                                <div class="tab-content mt-4">
-                                    <div class="tab-pane fade show active" id="pamymetDebitCardTab" role="tabpanel">
+
+
+<div class="px-4 row justify-content-between">
+                                    <div class="col-xl-3">
                                         <div class="form-group mb-3">
-                                            <input type="text" class="form-control input-credit-card" placeholder="Card Number">
-                                            <div class="hstack justify-content-end gap-1 mt-1 input-credit-card-type">
-                                                <div class="amex">
-                                                    <i class="fs-12 fa-brands fa-cc-amex"></i>
-                                                </div>
-                                                <div class="mastercard">
-                                                    <i class="fs-12 fa-brands fa-cc-mastercard"></i>
-                                                </div>
-                                                <div class="visa">
-                                                    <i class="fs-12 fa-brands fa-cc-visa"></i>
-                                                </div>
-                                                <div class="discover">
-                                                    <i class="fs-12 fa-brands fa-cc-discover"></i>
-                                                </div>
-                                                <div class="jcb">
-                                                    <i class="fs-12 fa-brands fa-cc-jcb"></i>
-                                                </div>
-                                                <div class="diners">
-                                                    <i class="fs-12 fa-brands fa-cc-diners-club"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group mb-3">
-                                            <input type="text" class="form-control" placeholder="Card Holder Name">
-                                        </div>
-                                        <div class="d-flex gap-3">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control input-date-formatting" placeholder="MM/YYYY">
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control input-Blocks-formatting" placeholder="686">
-                                            </div>
+                                          
+                                           <label for="InvoiceLabel" class="form-label">Main Category:</label> 
+           
+                                           <select id="largeSelect" class="form-select form-select-lg" required>
+                      <option><font size=2>Select Main Category</font></option>
+                      <option value="insurance">Insurance</option>
+                      <option value="exemption">Exemption</option>
+                      <option value="userfee">UserFee</option>
+                     </select>
+  
                                         </div>
                                     </div>
-                                    <div class="tab-pane fade" id="pamymetPaypalTab" role="tabpanel">
-                                        <p>Paypal is easiest way to pay online</p>
+
+
+                                    <div class="px-4 row justify-content-between">
+                                    <div class="col-xl-3">
+                                        <div class="form-group mb-3">
+                                          
+                                           <label for="InvoiceLabel" class="form-label">Sub Category:</label> 
+           
+                                           <select id="largeSelect" class="form-select form-select-lg" required>
+                      <option><font size=2>Select Sub Category</font></option>
+                      <option value="insurance">Self Referral </option>
+                       <option value="userfee">Referral</option>
+                      <option value="exemption">Children Under 5</option>
+                      <option value="userfee">NHIF</option>
+                       <option value="userfee">CHF</option>
+                       <option value="userfee">Elderly Above 60</option>
+                        <option value="userfee">Chronic Disease</option>
+                         <option value="userfee">Under Privilege</option>
+                          <option value="userfee">Disabled</option>
+                     </select>
+  
+                                        </div>
+                                    </div>
+
+                                    
+                                    <div class="px-4 row justify-content-between">
+                                    <div class="col-xl-3">
+                                        <div class="form-group mb-3">
+                                          
+                                           <label for="InvoiceLabel" class="form-label">Service:</label> 
+           
+                                           <select id="largeSelect" class="form-select form-select-lg" required>
+                      <option><font size=2>Select Service</font></option>
+                      <option value="insurance">Consultation MD </option>
+                            <option value="userfee">Consultation Reattendance</option>
+                       <option value="userfee">Dental Consultation</option>
+                      <option value="exemption">Eye Consultation</option>
+                      <option value="userfee">Surgeon Consultation</option>
+                       <option value="userfee">Orthopaedic Consultation</option>
+                       <option value="userfee">Gynaecology Consultation</option>
+                             <option value="userfee">Paediatric Consultation</option>
+                                   <option value="userfee">Nutrition Consultation</option>
+      <option value="userfee">Consultation for RCH</option>
+            <option value="userfee">Change Category Fee</option>
+                  <option value="userfee">Birth Certificate Fee</option>
+                        <option value="userfee">Student Field Fee</option>
+                              <option value="userfee">Anaesthetist Consultation</option>
+                        <option value="userfee">PostNatal Checkup</option>
+                         <option value="userfee">Pregnancy Consultation (First Visit)</option>
+                          <option value="userfee">Pregnancy Consultation (Reattendance)</option>
+                           <option value="userfee">Wound Dressing</option>
+                                 <option value="userfee">Stich Removal</option>
+                                       <option value="userfee">Medical Examination (Secondary)</option>
+                            <option value="userfee">Medical Examination (College/Staffs)</option>
+                                      <option value="userfee">Accomodation Fee (Private Ward)</option>     
+                                  <option value="userfee">Accomodation Fee (Public Ward)</option>
+                                          <option value="userfee">Food Handlers Fee</option>
+                                  <option value="userfee">Home Exercise Program</option>     
+                        </select>
+  
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div class="px-4 row justify-content-between">
+                                    <div class="col-xl-3">
+                                        <div class="form-group mb-3">
+                                          
+                                           <label for="InvoiceLabel" class="form-label">Department:</label> 
+           
+                                           <select id="largeSelect" class="form-select form-select-lg" required>
+                      <option><font size=2>Select Department</font></option>
+                      <option value="insurance">OutPatient </option>
+                       <option value="userfee">InPatient</option>
+                      <option value="exemption">Eye</option>
+                      <option value="userfee">Dental</option>
+                       <option value="userfee">Gynaecology</option>
+                       <option value="userfee">Minor Theatre</option>
+                        <option value="userfee">Ante Natal</option>
+                         <option value="userfee">Post Natal</option>
+                          <option value="userfee">Theatre</option>
+                                <option value="userfee">Labour & Delivery</option>
+                          <option value="userfee">Mortuary</option>
+                                <option value="userfee">Laboratory</option>
+                                      <option value="userfee">Pharmacy</option>
+                                            <option value="userfee">Imaging</option>
+                                                  <option value="userfee">Physiotherapy</option>
+                                  <option value="userfee">Nutrition</option>
+                                                </select>
+  
+                                        </div>
+                                    </div>
+
+                                      <hr class="border-dashed">
+<div class="px-4 row justify-content-between">
+                                    <div class="col-xl-3">
+                                        <div class="form-group mb-3">
+                                          
+                                           <label for="InvoiceLabel" class="form-label">Visit Type:</label>  <form>
+ 
+  <label>
+   <p> <input type="radio" name="choice" value="option1"> Normal Visit
+  </p></label>
+  <br>
+  <label>
+    <p>
+    <input type="radio" name="choice" value="option2"> Referral
+    </p>
+  </label>
+</form>
+                                        </div>
+                                    </div>
+
+
+                                      <hr class="border-dashed">
+<div class="px-4 row justify-content-between">
+                                    <div class="col-xl-3">
+                                        <div class="form-group mb-3">
+                                          
+                                           <label for="InvoiceLabel" class="form-label">Any Patient Identifier Card? (NIDA, Voters ID, Driving Licence, Others):</label>  <form>
+ 
+  <label>
+   <p> <input type="radio" name="choice" value="option1"> Yes
+  </p></label>
+  <br>
+  <label>
+    <p>
+    <input type="radio" name="choice" value="option2"> No
+    </p>
+  </label>
+</form>
+                                        </div>
+                                    </div>
+
+
                                         <p>
-                                            <a href="http://paypal.com"  class="btn btn-primary"><i class="bi bi-paypal me-2"></i> Log in my Paypal</a>
-                                        </p>
-                                        <div class="fs-11 text-muted">Note: There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card stretch stretch-full">
-                            <div class="card-body">
-                                <div class="mb-4 d-flex align-items-center justify-content-between">
-                                    <div>
-                                        <h6 class="fw-bold">Currency & Discount:</h6>
-                                        <span class="fs-12 text-muted">Calculate your currency, tax & discount</span>
-                                    </div>
-                                    <div class="avatar-text avatar-sm" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Calculate your currency, tax & discount">
-                                        <i class="feather feather-info"></i>
-                                    </div>
-                                </div>
-                                <div class="form-group mb-4">
-                                    <select class="form-control" data-select2-selector="currency">
-                                        <option data-currency="af">AFN - Afghan Afghani - ؋</option>
-                                        <option data-currency="al">ALL - Albanian Lek - Lek</option>
-                                        <option data-currency="dz">DZD - Algerian Dinar - دج</option>
-                                        <option data-currency="ao">AOA - Angolan Kwanza - Kz</option>
-                                        <option data-currency="ar">ARS - Argentine Peso - $</option>
-                                        <option data-currency="am">AMD - Armenian Dram - ֏</option>
-                                        <option data-currency="aw">AWG - Aruban Florin - ƒ</option>
-                                        <option data-currency="au">AUD - Australian Dollar - $</option>
-                                        <option data-currency="az">AZN - Azerbaijani Manat - m</option>
-                                        <option data-currency="bs">BSD - Bahamian Dollar - B$</option>
-                                        <option data-currency="bh">BHD - Bahraini Dinar - .د.ب</option>
-                                        <option data-currency="bd">BDT - Bangladeshi Taka - ৳</option>
-                                        <option data-currency="bb">BBD - Barbadian Dollar - Bds$</option>
-                                        <option data-currency="by">BYR - Belarusian Ruble - Br</option>
-                                        <option data-currency="be">BEF - Belgian Franc - fr</option>
-                                        <option data-currency="bz">BZD - Belize Dollar - $</option>
-                                        <option data-currency="bm">BMD - Bermudan Dollar - $</option>
-                                        <option data-currency="bt">BTN - Bhutanese Ngultrum - Nu.</option>
-                                        <option data-currency="bt">BTC - Bitcoin - ฿</option>
-                                        <option data-currency="bo">BOB - Bolivian Boliviano - Bs.</option>
-                                        <option data-currency="ba">BAM - Bosnia-Herzegovina Convertible Mark - KM</option>
-                                        <option data-currency="bw">BWP - Botswanan Pula - P</option>
-                                        <option data-currency="br">BRL - Brazilian Real - R$</option>
-                                        <option data-currency="gb">GBP - British Pound Sterling - £</option>
-                                        <option data-currency="bn">BND - Brunei Dollar - B$</option>
-                                        <option data-currency="bg">BGN - Bulgarian Lev - Лв.</option>
-                                        <option data-currency="bi">BIF - Burundian Franc - FBu</option>
-                                        <option data-currency="kh">KHR - Cambodian Riel - KHR</option>
-                                        <option data-currency="ca">CAD - Canadian Dollar - $</option>
-                                        <option data-currency="cv">CVE - Cape Verdean Escudo - $</option>
-                                        <option data-currency="ky">KYD - Cayman Islands Dollar - $</option>
-                                        <option data-currency="fr">XOF - CFA Franc BCEAO - CFA</option>
-                                        <option data-currency="fr">XAF - CFA Franc BEAC - FCFA</option>
-                                        <option data-currency="fr">XPF - CFP Franc - ₣</option>
-                                        <option data-currency="cl">CLP - Chilean Peso - $</option>
-                                        <option data-currency="cn">CNY - Chinese Yuan - ¥</option>
-                                        <option data-currency="co">COP - Colombian Peso - $</option>
-                                        <option data-currency="km">KMF - Comorian Franc - CF</option>
-                                        <option data-currency="cd">CDF - Congolese Franc - FC</option>
-                                        <option data-currency="cr">CRC - Costa Rican ColÃ³n - ₡</option>
-                                        <option data-currency="hr">HRK - Croatian Kuna - kn</option>
-                                        <option data-currency="cu">CUC - Cuban Convertible Peso - $, CUC</option>
-                                        <option data-currency="cz">CZK - Czech Republic Koruna - Kč</option>
-                                        <option data-currency="dk">DKK - Danish Krone - Kr.</option>
-                                        <option data-currency="dj">DJF - Djiboutian Franc - Fdj</option>
-                                        <option data-currency="do">DOP - Dominican Peso - $</option>
-                                        <option data-currency="bq">XCD - East Caribbean Dollar - $</option>
-                                        <option data-currency="eg">EGP - Egyptian Pound - ج.م</option>
-                                        <option data-currency="er">ERN - Eritrean Nakfa - Nfk</option>
-                                        <option data-currency="ee">EEK - Estonian Kroon - kr</option>
-                                        <option data-currency="et">ETB - Ethiopian Birr - Nkf</option>
-                                        <option data-currency="eu">EUR - Euro - €</option>
-                                        <option data-currency="fk">FKP - Falkland Islands Pound - £</option>
-                                        <option data-currency="fj">FJD - Fijian Dollar - FJ$</option>
-                                        <option data-currency="gm">GMD - Gambian Dalasi - D</option>
-                                        <option data-currency="ge">GEL - Georgian Lari - ლ</option>
-                                        <option data-currency="de">DEM - German Mark - DM</option>
-                                        <option data-currency="gh">GHS - Ghanaian Cedi - GH₵</option>
-                                        <option data-currency="gi">GIP - Gibraltar Pound - £</option>
-                                        <option data-currency="gr">GRD - Greek Drachma - ₯, Δρχ, Δρ</option>
-                                        <option data-currency="gt">GTQ - Guatemalan Quetzal - Q</option>
-                                        <option data-currency="gn">GNF - Guinean Franc - FG</option>
-                                        <option data-currency="gy">GYD - Guyanaese Dollar - $</option>
-                                        <option data-currency="ht">HTG - Haitian Gourde - G</option>
-                                        <option data-currency="hn">HNL - Honduran Lempira - L</option>
-                                        <option data-currency="hk">HKD - Hong Kong Dollar - $</option>
-                                        <option data-currency="hu">HUF - Hungarian Forint - Ft</option>
-                                        <option data-currency="is">ISK - Icelandic KrÃ³na - kr</option>
-                                        <option data-currency="in">INR - Indian Rupee - ₹</option>
-                                        <option data-currency="id">IDR - Indonesian Rupiah - Rp</option>
-                                        <option data-currency="ir">IRR - Iranian Rial - ﷼</option>
-                                        <option data-currency="iq">IQD - Iraqi Dinar - د.ع</option>
-                                        <option data-currency="il">ILS - Israeli New Sheqel - ₪</option>
-                                        <option data-currency="it">ITL - Italian Lira - L,£</option>
-                                        <option data-currency="jm">JMD - Jamaican Dollar - J$</option>
-                                        <option data-currency="jp">JPY - Japanese Yen - ¥</option>
-                                        <option data-currency="jo">JOD - Jordanian Dinar - ا.د</option>
-                                        <option data-currency="kz">KZT - Kazakhstani Tenge - лв</option>
-                                        <option data-currency="ke">KES - Kenyan Shilling - KSh</option>
-                                        <option data-currency="kw">KWD - Kuwaiti Dinar - ك.د</option>
-                                        <option data-currency="kg">KGS - Kyrgystani Som - лв</option>
-                                        <option data-currency="la">LAK - Laotian Kip - ₭</option>
-                                        <option data-currency="lv">LVL - Latvian Lats - Ls</option>
-                                        <option data-currency="lb">LBP - Lebanese Pound - £</option>
-                                        <option data-currency="ls">LSL - Lesotho Loti - L</option>
-                                        <option data-currency="lr">LRD - Liberian Dollar - $</option>
-                                        <option data-currency="ly">LYD - Libyan Dinar - د.ل</option>
-                                        <option data-currency="lt">LTL - Lithuanian Litas - Lt</option>
-                                        <option data-currency="mo">MOP - Macanese Pataca - $</option>
-                                        <option data-currency="mk">MKD - Macedonian Denar - ден</option>
-                                        <option data-currency="mg">MGA - Malagasy Ariary - Ar</option>
-                                        <option data-currency="mw">MWK - Malawian Kwacha - MK</option>
-                                        <option data-currency="my">MYR - Malaysian Ringgit - RM</option>
-                                        <option data-currency="mv">MVR - Maldivian Rufiyaa - Rf</option>
-                                        <option data-currency="mr">MRO - Mauritanian Ouguiya - MRU</option>
-                                        <option data-currency="mu">MUR - Mauritian Rupee - ₨</option>
-                                        <option data-currency="mx">MXN - Mexican Peso - $</option>
-                                        <option data-currency="md">MDL - Moldovan Leu - L</option>
-                                        <option data-currency="mn">MNT - Mongolian Tugrik - ₮</option>
-                                        <option data-currency="ma">MAD - Moroccan Dirham - MAD</option>
-                                        <option data-currency="mz">MZM - Mozambican Metical - MT</option>
-                                        <option data-currency="mm">MMK - Myanmar Kyat - K</option>
-                                        <option data-currency="na">NAD - Namibian Dollar - $</option>
-                                        <option data-currency="np">NPR - Nepalese Rupee - ₨</option>
-                                        <option data-currency="nl">ANG - Netherlands Antillean Guilder - ƒ</option>
-                                        <option data-currency="tw">TWD - New Taiwan Dollar - $</option>
-                                        <option data-currency="nz">NZD - New Zealand Dollar - $</option>
-                                        <option data-currency="ni">NIO - Nicaraguan CÃ³rdoba - C$</option>
-                                        <option data-currency="ng">NGN - Nigerian Naira - ₦</option>
-                                        <option data-currency="kp">KPW - North Korean Won - ₩</option>
-                                        <option data-currency="no">NOK - Norwegian Krone - kr</option>
-                                        <option data-currency="om">OMR - Omani Rial - .ع.ر</option>
-                                        <option data-currency="pk">PKR - Pakistani Rupee - ₨</option>
-                                        <option data-currency="pa">PAB - Panamanian Balboa - B/.</option>
-                                        <option data-currency="pg">PGK - Papua New Guinean Kina - K</option>
-                                        <option data-currency="py">PYG - Paraguayan Guarani - ₲</option>
-                                        <option data-currency="pe">PEN - Peruvian Nuevo Sol - S/.</option>
-                                        <option data-currency="ph">PHP - Philippine Peso - ₱</option>
-                                        <option data-currency="pl">PLN - Polish Zloty - zł</option>
-                                        <option data-currency="qa">QAR - Qatari Rial - ق.ر</option>
-                                        <option data-currency="ro">RON - Romanian Leu - lei</option>
-                                        <option data-currency="ru">RUB - Russian Ruble - ₽</option>
-                                        <option data-currency="rw">RWF - Rwandan Franc - FRw</option>
-                                        <option data-currency="sv">SVC - Salvadoran ColÃ³n - ₡</option>
-                                        <option data-currency="ws">WST - Samoan Tala - SAT</option>
-                                        <option data-currency="sa">SAR - Saudi Riyal - ﷼</option>
-                                        <option data-currency="sr">RSD - Serbian Dinar - din</option>
-                                        <option data-currency="sc">SCR - Seychellois Rupee - SRe</option>
-                                        <option data-currency="sl">SLL - Sierra Leonean Leone - Le</option>
-                                        <option data-currency="sg">SGD - Singapore Dollar - $</option>
-                                        <option data-currency="sk">SKK - Slovak Koruna - Sk</option>
-                                        <option data-currency="sb">SBD - Solomon Islands Dollar - Si$</option>
-                                        <option data-currency="so">SOS - Somali Shilling - Sh.so.</option>
-                                        <option data-currency="za">ZAR - South African Rand - R</option>
-                                        <option data-currency="kr">KRW - South Korean Won - ₩</option>
-                                        <option data-currency="lk">LKR - Sri Lankan Rupee - Rs</option>
-                                        <option data-currency="sh">SHP - St. Helena Pound - £</option>
-                                        <option data-currency="sd">SDG - Sudanese Pound - .س.ج</option>
-                                        <option data-currency="sr">SRD - Surinamese Dollar - $</option>
-                                        <option data-currency="sz">SZL - Swazi Lilangeni - E</option>
-                                        <option data-currency="se">SEK - Swedish Krona - kr</option>
-                                        <option data-currency="ch">CHF - Swiss Franc - CHf</option>
-                                        <option data-currency="sy">SYP - Syrian Pound - LS</option>
-                                        <option data-currency="st">STD - São Tomé and Príncipe Dobra - Db</option>
-                                        <option data-currency="tj">TJS - Tajikistani Somoni - SM</option>
-                                        <option data-currency="tz">TZS - Tanzanian Shilling - TSh</option>
-                                        <option data-currency="th">THB - Thai Baht - ฿</option>
-                                        <option data-currency="to">TOP - Tongan pa'anga - $</option>
-                                        <option data-currency="tt">TTD - Trinidad & Tobago Dollar - $</option>
-                                        <option data-currency="tn">TND - Tunisian Dinar - ت.د</option>
-                                        <option data-currency="tr">TRY - Turkish Lira - ₺</option>
-                                        <option data-currency="tm">TMT - Turkmenistani Manat - T</option>
-                                        <option data-currency="ug">UGX - Ugandan Shilling - USh</option>
-                                        <option data-currency="ua">UAH - Ukrainian Hryvnia - ₴</option>
-                                        <option data-currency="ae">AED - United Arab Emirates Dirham - إ.د</option>
-                                        <option data-currency="uy">UYU - Uruguayan Peso - $</option>
-                                        <option data-currency="us" selected>USD - US Dollar - $</option>
-                                        <option data-currency="uz">UZS - Uzbekistan Som - лв</option>
-                                        <option data-currency="vu">VUV - Vanuatu Vatu - VT</option>
-                                        <option data-currency="ve">VEF - Venezuelan BolÃ­var - Bs</option>
-                                        <option data-currency="vn">VND - Vietnamese Dong - ₫</option>
-                                        <option data-currency="ye">YER - Yemeni Rial - ﷼</option>
-                                        <option data-currency="zm">ZMK - Zambian Kwacha - ZK</option>
-                                    </select>
-                                </div>
-                                <div class="form-group mb-4">
-                                    <input type="number" id="itemDiscount" class="form-control" placeholder="Discount">
-                                </div>
-                                <div class="ps-0 mb-3 form-check form-switch form-switch-sm d-flex align-center justify-content-between">
-                                    <label class="fw-bold text-dark" for="LateFees">
-                                        <span>Late Fees</span>
-                                        <span class="fs-11 fw-normal text-muted d-block">Late fees for extra charge</span>
-                                    </label>
-                                    <input class="form-check-input" type="checkbox" id="LateFees" checked="checked">
-                                </div>
-                                <div class="ps-0 mb-3 form-check form-switch form-switch-sm d-flex align-center justify-content-between">
-                                    <label class="fw-bold text-dark" for="ClientNote">
-                                        <span>Client Notes</span>
-                                        <span class="fs-11 fw-normal text-muted d-block">Client notes for further query</span>
-                                    </label>
-                                    <input class="form-check-input" type="checkbox" id="ClientNote">
-                                </div>
-                                <div class="ps-0 form-check form-switch form-switch-sm d-flex align-center justify-content-between">
-                                    <label class="fw-bold text-dark" for="SavePayment">
-                                        <span>Save Payment</span>
-                                        <span class="fs-11 fw-normal text-muted d-block">Save payment for quick payout</span>
-                                    </label>
-                                    <input class="form-check-input" type="checkbox" id="SavePayment">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card stretch stretch-full">
-                            <div class="card-body">
-                                <div class="mb-4 d-flex align-items-center justify-content-between">
-                                    <div>
-                                        <h6 class="fw-bold">Cancel Invoce</h6>
-                                        <span class="fs-12 text-muted">Cancel invoice for ever.</span>
-                                    </div>
-                                    <a href="javascript:void(0);" class="btn btn-light-brand">Nevermind</a>
-                                </div>
-                                <p class="fs-12 text-muted mb-4">Are you sure you want to cancel this invoice? Neigther you nor alex will able to make any(more) payments on it.</p>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="notifyMe" checked="">
-                                    <label class="custom-control-label c-pointer" for="notifyMe">Notify alex that this invoice was cancelled.</label>
-                                </div>
-                                <a href="javascript:void(0);" class="btn bg-soft-danger text-danger mt-4 successAlertMessage">Cancel this Invoice</a>
-                            </div>
+                                             <div class="d-flex align-items-center gap-2 page-header-right-items-wrapper">
+                            <a href="javascript:void(0);" class="btn btn-light-brand successAlertMessage">
+                                <i class="feather-layers me-2"></i>
+                                <span>Cancel</span>
+                            </a>
+                            <a href="javascript:void(0);" class="btn btn-primary successAlertMessage">
+                                <i class="feather-save me-2"></i>
+                                <span>Register</span>
+                            </a>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- [ Main Content ] end -->
-        </div>
+                                        </p>
+                                    </div>
+                                </div>
+                        
+                                
+
+
+                        
+        
       <!-- [ Footer ] start -->
         <footer class="footer">
             <p class="fs-11 text-muted fw-medium text-uppercase mb-0 copyright">
@@ -2357,6 +2415,9 @@
                         </div>
                         <div class="col-6 text-center single-option">
                             <input type="radio" class="btn-check" id="app-header-dark" name="app-header" value="2" data-app-header="app-header-dark" />
+                         
+                         
+                         
                             <label class="py-2 fs-9 fw-bold text-dark text-uppercase text-spacing-1 border border-gray-2 w-100 h-100 c-pointer position-relative options-label" for="app-header-dark">Dark</label>
                         </div>
                     </div>
