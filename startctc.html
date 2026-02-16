@@ -1718,10 +1718,10 @@
             <div class="page-header">
                 <div class="page-header-left d-flex align-items-center">
                     <div class="page-header-title">
-                        <h5 class="m-b-10">OutPatient</h5>
+                        <h5 class="m-b-10">RCH Module</h5>
                     </div>
                     <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">OPD Admit</a></li>
+                        <li class="breadcrumb-item"><a href="index.html">CTC Admit</a></li>
                         
                     </ul>
                 </div>
@@ -1735,7 +1735,7 @@
                         </div>
                                                
                                          
-                            <a href="treatment.html" class="btn btn-primary">
+                            <a href="ctc.html" class="btn btn-primary">
                                 <i class="feather-plus me-2"></i>
                                 <span>Submit</span>
                             </a>
@@ -1756,36 +1756,47 @@
                                 <div class="card-body">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <a href="javascript:void(0);" class="fw-bold d-block">
-                                            <span class="d-block"><font color="Darkblue">TB SCREENING</font></span>
+                                            <span class="d-block"><font color="Darkblue">CTC PATIENT INFORMATION</font></span>
                                             <span class="fs-20 fw-bold d-block">
                                             <div class="d-md-flex align-items-center justify-content-end gap-4">
                                             <div class="form-group mb-3 mb-md-0">
-                                                <label class="form-label">General Illness?:</label>
+                                                <label class="form-label">First Name?:</label>
                                                 <input id="text" required class="form-control" placeholder="Answer ...">
                                             </div>
                                             <div class="form-group">
-                                                <label class="form-label">Do you Cough?:</label>
+                                                <label class="form-label">Last Name?:</label>
+                                                <input id="text" required class="form-control" placeholder="Answer ...">
+                                            </div>
+                                        </div>
+                                        <div class="d-md-flex align-items-center justify-content-end gap-4">
+                                            <div class="form-group mb-3 mb-md-0">
+                                                <label class="form-label">Date of Birth ?:</label>
+                                                <input id="number" required class="form-control" placeholder="YYYY/MM/DD">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-label">Area of Residence?:</label>
                                                 <input id="text" required class="form-control" placeholder="Answer ...">
                                             </div>
                                         </div>
                                     <div class="d-md-flex align-items-center justify-content-end gap-4">
                                             <div class="form-group mb-3 mb-md-0">
-                                                <label class="form-label">Do you feel Fever?:</label>
-                                                <input id="text" required class="form-control" placeholder="Answer ...">
+                                                <label class="form-label">CTC ID ?:</label>
+                                                <input id="number" required class="form-control" placeholder="Answer ...">
                                             </div>
                                             <div class="form-group">
-                                                <label class="form-label">Loss of Appetite?:</label>
+                                                <label class="form-label">District?:</label>
                                                 <input id="text" required class="form-control" placeholder="Answer ...">
                                             </div>
                                         </div>
                                     <div class="d-md-flex align-items-center justify-content-end gap-4">
                                             <div class="form-group mb-3 mb-md-0">
-                                                <label class="form-label">Any Dizzness sign?:</label>
-                                                <input id="text" required class="form-control" placeholder="Answer ...">
+                                                <label class="form-label">Check-Up Date?:</label>
+                                                <input id="text" required class="form-control" placeholder="YYYY/MM/DD">
+                                            
                                             </div>
                                             <div class="form-group">
-                                                <label class="form-label">Any Diarrhoea Sign?:</label>
-                                                <input id="text" required class="form-control" placeholder="Answer ...">
+                                                <label class="form-label">+ve Result (Confirmation)?:</label>
+                                                <input id="text" required class="form-control" placeholder="YYYY/MM/DD">
                                             </div>
                                         </div></span>
                                         </a>
@@ -1799,34 +1810,34 @@
                                 <div class="card-body">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <a href="javascript:void(0);" class="fw-bold d-block">
-                                            <span class="d-block"><font color="darkblue">VITALS</font></span>
+                                            <span class="d-block"><font color="darkblue">OTHER MEDICAL DETAILS</font></span>
                                             <span class="fs-20 fw-bold d-block">
                                                <div class="d-md-flex align-items-center justify-content-end gap-4">
                                             <div class="form-group mb-3 mb-md-0">
-                                                <label class="form-label">Weight (Kg):</label>
-                                                <input id="text"  type="number" class="form-control" placeholder="Weight ..." required>
+                                                <label class="form-label">Referred From:</label>
+                                                <input id="text"  type="text" class="form-control" placeholder="Answer ..." required>
                                             </div>
                                             <div class="form-group">
+                                                <label class="form-label">Transferred In:</label>
+                                                <input id="text"  type="text" class="form-control" placeholder="Answer ..." required>
+                                            </div>
+                                        </div><div class="d-md-flex align-items-center justify-content-end gap-4">
+                                            <div class="form-group mb-3 mb-md-0">
+                                                <label class="form-label">Treatment Supporter?:</label>
+                                                <input id="text" type="text" class="form-control" placeholder="Answer ..." required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-label">NHCI Type?:</label>
+                                                <input id="text" type="text" class="form-control" placeholder="Answer ..." required>
+                                            </div>
+                                        </div><div class="d-md-flex align-items-center justify-content-end gap-4">
+                                            <div class="form-group mb-3 mb-md-0">
                                                 <label class="form-label">Height (Cm):</label>
-                                                <input id="text"  type="number" class="form-control" placeholder="Height ..." required>
-                                            </div>
-                                        </div><div class="d-md-flex align-items-center justify-content-end gap-4">
-                                            <div class="form-group mb-3 mb-md-0">
-                                                <label class="form-label">Systolic Pressure (mmHg):</label>
-                                                <input id="text" type="number" class="form-control" placeholder="Systolic ..." required>
+                                                <input id="text" type="number" class="form-control" placeholder="Answer ..." required>
                                             </div>
                                             <div class="form-group">
-                                                <label class="form-label">Diastolic Pressure (mmHg):</label>
-                                                <input id="text" type="number" class="form-control" placeholder="Diastolic ..." required>
-                                            </div>
-                                        </div><div class="d-md-flex align-items-center justify-content-end gap-4">
-                                            <div class="form-group mb-3 mb-md-0">
-                                                <label class="form-label">Temperature (Centigrade):</label>
-                                                <input id="text" type="number" class="form-control" placeholder="Temperature ..." required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="form-label">Pulse Rate:</label>
-                                                <input id="text" type="number" class="form-control" placeholder="Pulse Rate ..." required>
+                                                <label class="form-label">Supporter Phone:</label>
+                                                <input id="text" type="number" class="form-control" placeholder="Answer ..." required>
                                             </div>
                                         </div></span>
                                         </a>
