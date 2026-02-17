@@ -115,8 +115,8 @@
                         <ul class="nxl-submenu">
                             <li class="nxl-item"><a class="nxl-link" href="payment.html">Re-Print Receipt</a></li>
                             <li class="nxl-item"><a class="nxl-link" href="invoice-view.html">Pending Bills</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="cashier.html">Cashier Bills</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="bulkdeposit.html">Bulk Cash Deposit</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="invoice-create.html">Cashier Bills</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="invoice-create.html">Bulk Cash Deposit</a></li>
                         </ul>
                     </li>
                     <li class="nxl-item nxl-hasmenu">
@@ -125,10 +125,10 @@
                             <span class="nxl-mtext">Patients DB</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
                         </a>
                         <ul class="nxl-submenu">
-                            <li class="nxl-item"><a class="nxl-link" href="outpatientdb.html">Outpatient Patients</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="inpatientdb.html">Inpatient Patients</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="rchdb.html">RCH Patients</a></li>
-                         <li class="nxl-item"><a class="nxl-link" href="exemptiondb.html">Exemption Patients</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="customers.html">Outpatient Patients</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="customers-view.html">Inpatient Patients</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="customers-create.html">RCH Patients</a></li>
+                         <li class="nxl-item"><a class="nxl-link" href="customers-create.html">Exemption Patients</a></li>
                        
                         </ul>
                     </li>
@@ -1718,11 +1718,11 @@
             <div class="page-header">
                 <div class="page-header-left d-flex align-items-center">
                     <div class="page-header-title">
-                        <h5 class="m-b-10">Investigation</h5>
+                        <h5 class="m-b-10">Stock Taking</h5>
                     </div>
                     <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="dashboard.html">OPD/IPD Investigation</a></li>
-                        
+                        <li class="breadcrumb-item"><a href="startstocktaking.html">Create</a></li>
+    
                     </ul>
                 </div>
                 <div class="page-header-right ms-auto">
@@ -1733,13 +1733,7 @@
                                 <span>Back</span>
                             </a>
                         </div>
-                                               
-                                         
-                            <a href="opdadmit.html" class="btn btn-primary">
-                                <i class="feather-plus me-2"></i>
-                                <span>Submit</span>
-                            </a>
-                        </div>
+                       
                     </div>
                     <div class="d-md-none d-flex align-items-center">
                         <a href="javascript:void(0)" class="page-header-right-open-toggle">
@@ -1748,117 +1742,12 @@
                     </div>
                 </div>
             </div>
-            <div id="collapseOne" class="accordion-collapse collapse page-header-collapse">
-                <div class="accordion-body pb-2">
-                    <div class="row">
-                        <div class="col-xxl-3 col-md-6">
-                            <div class="card stretch stretch-full">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <a href="javascript:void(0);" class="fw-bold d-block">
-                                            <span class="d-block"><font color="Darkblue">LABORATORY INVESTIGATION</font></span>
-                                            <span class="fs-20 fw-bold d-block">
-                                            <div class="d-md-flex align-items-center justify-content-end gap-4">
-                                            <div class="form-group mb-3 mb-md-0">
-                                                <label class="form-label">Investigation Name:</label>
-                                                <input id="text" class="form-control" placeholder="Investigation ...">
-                                            </div>
-                                            <div class="form-group">
-                                              
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="form-label">Reason / Remark:</label>
-                                                <input id="text" type="text" class="form-control" placeholder="Reason ...">
-                                            </div>
-                                          
-                                          </div>
-                                     </span>
-                                        </a> 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-3 col-md-6">
-                            <div class="card stretch stretch-full">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <a href="javascript:void(0);" class="fw-bold d-block">
-                                            <span class="d-block"><font color="darkblue">RADIOLOGY INVESTIGATION</font></span>
-                                            <span class="fs-20 fw-bold d-block">
-                                               <div class="d-md-flex align-items-center justify-content-end gap-4">
-                                            <div class="form-group mb-3 mb-md-0">
-                                              <label class="form-label">Investigation Name:</label>
-                                                <input id="text" class="form-control" placeholder="Investigation ...">
-                                            </div>
-                                            <div class="form-group">
-                                              
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="form-label">Reason / Remark:</label>
-                                                <input id="text" type="text" class="form-control" placeholder="Reason ...">
-                                            </div>
-                                            </div>
-                                            
-                                           
-                                      
-                                        </div></span>
-                                        </a>
-                                       
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                     
-                        </div>
-                        <div class="col-xxl-3 col-md-6">
-                            <div class="card stretch stretch-full">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <a href="javascript:void(0);" class="fw-bold d-block">
-                                            <span class="d-block"><font color="darkblue">DISPOSITION</font></span>
-                                            <span class="fs-20 fw-bold d-block"><div class="d-md-flex align-items-center justify-content-end gap-4">
-                                            <div class="form-group mb-3 mb-md-0">
-                                                <label class="form-label"></label>
-                                              <p>       
-                                         <select id="largeSelect" class="form-select form-select-lg" required>
-                      <option><font size=2>Department ..</font></option>
-                      <option value="insurance">OutPatient </option>
-                       <option value="userfee">InPatient</option>
-                      <option value="exemption">Eye</option>
-                      <option value="userfee">Dental</option>
-                       <option value="userfee">Gynaecology</option>
-                       <option value="userfee">Minor Theatre</option>
-                        <option value="userfee">Ante Natal</option>
-                         <option value="userfee">Post Natal</option>
-                          <option value="userfee">Theatre</option>
-                                <option value="userfee">Labour & Delivery</option>
-                          <option value="userfee">Mortuary</option>
-                                <option value="userfee">Laboratory</option>
-                                      <option value="userfee">Pharmacy</option>
-                                            <option value="userfee">Imaging</option>
-                                                  <option value="userfee">Physiotherapy</option>
-                                  <option value="userfee">Nutrition</option>
-                                                </select>
-                                   </p>
 
 
-
-
-                                            </div>
-                                           
-                                        </div></span>
-                                        </a>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <!-- [ page-header ] end -->
-            <!-- [ Main Content ] start -->
-               <div class="px-4 row justify-content-between">
+
+
+ <div class="px-4 row justify-content-between">
                                     <div class="col-xl-3">
                                         <div class="form-group mb-3">
                                            <p>
@@ -1866,95 +1755,152 @@
                                 <span class="input-group-text">
                                     <i class="feather-search fs-6 text-muted"></i>
                                 </span>
-                                <input type="text" class="form-control search-input-field" placeholder="Search Patient by MRN ..." />
+                                <input type="text" class="form-control search-input-field" placeholder="Search Item..." />
                                 <span class="input-group-text">
                                   Search
                                 </span>
                             </div>
 
-</p>
+                      </p>
+         
+                 </div>
+          </div>
 
-                                      
+            <!-- [ Main Content ] start -->
+            <div class="main-content">
+                <div class="row">
+                    <div class="col-xl-8">
+                        <div class="card invoice-container">
+                            <div class="card-header">
+                                <h5>Stock Taking</h5>
+                                <div class="dropdown">
+                                    <a href="javascript:void(0)" class="btn btn-light-brand dropdown-toggle" data-bs-toggle="dropdown" data-bs-offset="0,25">+ Create</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="javascript:void(0);" class="dropdown-item active">General Store</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class="dropdown-item">Only Available Stores</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class="dropdown-item">Only Available Items</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class="dropdown-item">Only Patient Visit</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                         <div class="px-4 row justify-content-between">
+                                    <div class="col-xl-3">
+                                        <div class="form-group mb-3">
+                                          
+                                           <label for="InvoiceLabel" class="form-label">Store Name:</label> 
+           
+                                           <select id="largeSelect" class="form-select form-select-lg" required>
+                      <option><font size=2>Select Store Name</font></option>
+                      <option value="insurance">Main Store</option>
+                      <option value="exemption">Laboratory Store</option>
+                      <option value="userfee">Labour Store</option>
+                                  <option value="userfee">OPD Unit</option>
+                                              <option value="userfee">Dispensing Unit</option>
+                               <option value="userfee">Post Natal Store</option>
+                                           <option value="userfee">Theatre Store</option>
+                                                       <option value="userfee">Eye Store</option>
+                                                                   <option value="userfee">Dental Store</option>
+                                                                               <option value="userfee">Ante Natal Store</option>
+                                            </select>
+  
                                         </div>
                                     </div>
 
-            <div class="main-content">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="card stretch stretch-full">
-                            <div class="card-body p-0">
-
-
-
-
-                                
-                                <div class="table-responsive">
-                                    <table class="table table-hover" id="paymentList">
-                                        <thead>
-                                            <tr>
-                                                
-                                                <th>MRN</th>
-                                                <th>Name</th>
-                                                <th>Category</th>
-                                                <th>Date</th>
-                                             
-                                                <th>Status</th>
-                                                <th class="text-end">Actions</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="single-item">
-                                               
-                                                <td><a href="invoice-view.html" class="fw-bold">00-32-98</a></td>
-                                                <td>
-                                                    <a href="javascript:void(0)" class="hstack gap-3">
-                                                        <div class="avatar-image avatar-md">
-                                                            <img src="assets/images/avatar/profile.JPG" alt="" class="img-fluid">
-                                                        </div>
-                                                        <div>
-                                                            <span class="text-truncate-1-line">Abdallah Juma</span>
-                                                            
-                                                        </div>
-                                                    </a>
-                                                </td>
-                                                <td class="fw-bold text-dark">Self Referral</td>
-                                                <td>2025-04-25, 03:42PM</td>
-            
-                                                <td>
-                                                    <div class="badge bg-soft-success text-success">Admitted</div>
-                                                </td>
-                                                <td>
-                                                    <div class="hstack gap-2 justify-content-end">
-                                                      
-                                <span> <div class="d-flex align-items-center gap-2 page-header-right-items-wrapper">
-                            <a href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-                                  <div class="btn btn-primary">Investigation</div>
-                                                
-                            </a></span>
-                            </a>
-                                                      
-                                                                </li>
-                                                                
-                                                               
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                               
                              
-                                               
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
+
+                                <hr class="border-dashed">
+                               
+
+ <div class="col-xl-3">
+                                        <div class="form-group mb-3">
+                                            <label for="InvoiceNumber" class="form-label">Stock Balance:</label>
+                                            <input type="number" class="form-control" id="InvoiceNumber" placeholder="Stock Balance">
+                                        </div>
+                                    </div>
+
+ <div class="col-xl-3">
+                                        <div class="form-group mb-3">
+                                            <label for="InvoiceNumber" class="form-label">Adjusted Quantity:</label>
+                                            <input type="number" class="form-control" id="InvoiceNumber" placeholder="Adjusted Quantity">
+                                        </div>
+                                    </div>
+ <div class="col-xl-3">
+                                        <div class="form-group mb-3">
+                                            <label for="InvoiceNumber" class="form-label">Final Balance:</label>
+                                            <input type="number" class="form-control" id="InvoiceNumber" placeholder="Final Balance">
+                                        </div>
+                                    </div>
+
+<div class="px-4 row justify-content-between">
+                                    <div class="col-xl-3">
+                                        <div class="form-group mb-3">
+                                          
+                                          <label for="html5-datetime-local-input" class="col-md-2 col-form-label"></label>
+                <div class="col-md-10">
+                 <a href="javascript:void(0);" class="badge bg-soft-success text-success">Date:</a>
+                                <input
+                    class="form-control"
+                    type="datetime-local"
+                    
+                    id="html5-datetime-local-input"
+                    required
+                  />
+                </div>        </div>
+                                    </div>
+                                    
+ 
+                                      <hr class="border-dashed">
+<div class="px-4 row justify-content-between">
+                                    <div class="col-xl-3">
+                                        <div class="form-group mb-3">
+                                          
+                                           <label for="InvoiceLabel" class="form-label">Did You Confirm this Stock Taking?</label>  <form>
+ 
+  <label>
+   <p> <input type="radio" name="choice" value="option1"> Yes
+  </p></label>
+  <br>
+  <label>
+    <p>
+    <input type="radio" name="choice" value="option2"> No
+    </p>
+  </label>
+</form>
+                                        </div>
+                                    </div>
+
+
+                                        <p>
+                                             <div class="d-flex align-items-center gap-2 page-header-right-items-wrapper">
+                            <a href="javascript:void(0);" class="btn btn-light-brand successAlertMessage">
+                                <i class="feather-layers me-2"></i>
+                                <span>Cancel</span>
+                            </a>
+                           <a href="stocktaking.html" class="btn btn-primary">
+                                <i class="feather-save me-2"></i>
+                                <span>Save</span>
+                            </a>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- [ Main Content ] end -->
-        </div>
-        <!-- [ Footer ] start -->
+                                        </p>
+                                    </div>
+                                </div>
+                        
+                                
+
+
+                        
+        
+      <!-- [ Footer ] start -->
         <footer class="footer">
             <p class="fs-11 text-muted fw-medium text-uppercase mb-0 copyright">
                 <span>Copyright ©</span>
@@ -2016,6 +1962,9 @@
                         </div>
                         <div class="col-6 text-center single-option">
                             <input type="radio" class="btn-check" id="app-header-dark" name="app-header" value="2" data-app-header="app-header-dark" />
+                         
+                         
+                         
                             <label class="py-2 fs-9 fw-bold text-dark text-uppercase text-spacing-1 border border-gray-2 w-100 h-100 c-pointer position-relative options-label" for="app-header-dark">Dark</label>
                         </div>
                     </div>
