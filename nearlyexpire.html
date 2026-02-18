@@ -1721,7 +1721,7 @@
                         <h5 class="m-b-10">Pharmacy Management</h5>
                     </div>
                     <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="stocktaking.html">Stock Taking</a></li>
+                        <li class="breadcrumb-item"><a href="nearlyexpire.html">Nearly Expired Items</a></li>
                         
                     </ul>
                 </div>
@@ -1898,24 +1898,7 @@
             <!-- [ page-header ] end -->
             <!-- [ Main Content ] start -->
                <div class="px-4 row justify-content-between">
-                                    <div class="col-xl-3">
-                                        <div class="form-group mb-3">
-                                           <p>
-        <div class="input-group search-form">
-                                <span class="input-group-text">
-                                    <i class="feather-search fs-6 text-muted"></i>
-                                </span>
-                                <input type="text" class="form-control search-input-field" placeholder="Search Item ..." />
-                                <span class="input-group-text">
-                                  Search
-                                </span>
-                            </div>
-
-                   </p>
-
-                                      
-                </div>
-                                    </div>
+                                    
 
             <div class="main-content">
                 <div class="row">
@@ -1923,54 +1906,74 @@
                         <div class="card stretch stretch-full">
                             <div class="card-body p-0">
 
-
-
-
                                 
                                 <div class="table-responsive">
                                     <table class="table table-hover" id="paymentList">
                                         <thead>
                                             <tr>
-                                                
-                                                
-                                                <th>Item Name</th>
+                                                                
                                                 <th>Store Name</th>
-                                                <th>Adjustment Type</th>
+                                                <th>Start Expire Date</th>
+                                                <th>End Expire Date</th>
                                              
-                                                <th>Original Quantity (A)</th>
-                                                <th>Adjusted Qnty (B)</th>
-                                                <th class="text-end">Final Quantity (A-B)</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr class="single-item">
                                                
-                                                <td>Paracetamol 500Mg Tablet</td>
                                                 <td>
-                                                   Main Store
-                                                            
                                                     
+                                                    <select id="largeSelect" class="form-select form-select-lg" required>
+                      <option><font size=2>Select Store</font></option>
+                      <option value="insurance">Main Store</option>
+                      <option value="exemption">Laboratory Store</option>
+                      <option value="userfee">Labour Store</option>
+                                  <option value="userfee">OPD Unit</option>
+                                              <option value="userfee">Dispensing Unit</option>
+                               <option value="userfee">Post Natal Store</option>
+                                           <option value="userfee">Theatre Store</option>
+                                                       <option value="userfee">Eye Store</option>
+                                                                   <option value="userfee">Dental Store</option>
+                                                                               <option value="userfee">Ante Natal Store</option>
+                                            </select>
+                                                </td>
+                                                <td>
+                                                 
+                                                  <input
+                    class="form-control"
+                    type="datetime-local"
+                    
+                    id="html5-datetime-local-input"
+                    required
+                  />  
                                                     
                                                 </td>
-                                                <td class="fw-bold text-dark">Expired</td>
-                                                <td>10</td>
-            
-                                                <td>
-                                                   03
+                                                <td class="fw-bold text-dark">
+                                                      <input
+                    class="form-control"
+                    type="datetime-local"
+                    
+                    id="html5-datetime-local-input"
+                    required
+                  />  
                                                 </td>
-                                                <td>
-                                                   07 
                                                       
-                                                                </li>          
+                                                <td>
+                                                  <a href="nearbyexpire.pdf" class="btn btn-primary">
+                                
+                                <span><small>Search</small></span>
+                            </a>
+                                                     
+                                                  </li>          
                                                                
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
+                                            </ul>
+                                      </div>
+                                </div>
+                             </td>
+                        </tr>
                                        
-                                        </tbody>
-                                    </table>
+                   </tbody>
+                         </table>
                                     
                                 </div>
                             </div>
@@ -1978,9 +1981,9 @@
                     </div>
                 </div>
             </div>
-              <a href="startstocktaking.html" class="btn btn-primary">
+              <a href="allnearbyexpire.pdf" class="btn btn-primary">
                                 
-                                <span><small>Create +</small></span>
+                                <span><small>View Nearly Expired items</small></span>
                             </a>
             <!-- [ Main Content ] end -->
         </div>
