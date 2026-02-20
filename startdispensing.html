@@ -115,8 +115,8 @@
                         <ul class="nxl-submenu">
                             <li class="nxl-item"><a class="nxl-link" href="payment.html">Re-Print Receipt</a></li>
                             <li class="nxl-item"><a class="nxl-link" href="invoice-view.html">Pending Bills</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="invoice-create.html">Cashier Bills</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="invoice-create.html">Bulk Cash Deposit</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="cashier.html">Cashier Bills</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="bulkdeposit.html">Bulk Cash Deposit</a></li>
                         </ul>
                     </li>
                     <li class="nxl-item nxl-hasmenu">
@@ -125,10 +125,10 @@
                             <span class="nxl-mtext">Patients DB</span><span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
                         </a>
                         <ul class="nxl-submenu">
-                            <li class="nxl-item"><a class="nxl-link" href="customers.html">Outpatient Patients</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="customers-view.html">Inpatient Patients</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="customers-create.html">RCH Patients</a></li>
-                         <li class="nxl-item"><a class="nxl-link" href="customers-create.html">Exemption Patients</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="outpatientdb.html">Outpatient Patients</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="inpatientdb.html">Inpatient Patients</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="rchdb.html">RCH Patients</a></li>
+                         <li class="nxl-item"><a class="nxl-link" href="exemptiondb.html">Exemption Patients</a></li>
                        
                         </ul>
                     </li>
@@ -190,9 +190,9 @@
                         </a>
                         <ul class="nxl-submenu">
                             <li class="nxl-item"><a class="nxl-link" href="settings-general.html">TRIAGE</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="settings-seo.html">Admission Request</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="settings-tags.html">Admitted Patients</a></li>
-                            <li class="nxl-item"><a class="nxl-link" href="settings-email.html">Discharge</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="admissionrequest.html">Admission Request</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href="admittedpatients.html">Admitted Patients</a></li>
+                            <li class="nxl-item"><a class="nxl-link" href=".html">Discharge</a></li>
                             <li class="nxl-item"><a class="nxl-link" href="settings-tasks.html">Charting</a></li>
                            
                         </ul>
@@ -1721,10 +1721,9 @@
                         <h5 class="m-b-10">Pharmacy Management</h5>
                     </div>
                     <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="directdispensing.html">Direct Dispensing</a></li>
-    
-                    </ul>
-                </div>
+                        <li class="breadcrumb-item"><a href="dispensing.html">Dispensing</a></li>
+                         </ul>
+                      </div>
                 <div class="page-header-right ms-auto">
                     <div class="page-header-right-items">
                         <div class="d-flex d-md-none">
@@ -1733,7 +1732,95 @@
                                 <span>Back</span>
                             </a>
                         </div>
-                       
+                        <div class="d-flex align-items-center gap-2 page-header-right-items-wrapper">
+                            <a href="javascript:void(0);" class="btn btn-icon btn-light-brand" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                <i class="feather-bar-chart"></i>
+                            </a>
+                            <div class="dropdown">
+                                <a class="btn btn-icon btn-light-brand" data-bs-toggle="dropdown" data-bs-offset="0, 10" data-bs-auto-close="outside">
+                                    <i class="feather-filter"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        <i class="feather-eye me-3"></i>
+                                        <span>All</span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        <i class="feather-send me-3"></i>
+                                        <span>Sent</span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        <i class="feather-book-open me-3"></i>
+                                        <span>Open</span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        <i class="feather-archive me-3"></i>
+                                        <span>Draft</span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        <i class="feather-bell me-3"></i>
+                                        <span>Revised</span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        <i class="feather-shield-off me-3"></i>
+                                        <span>Declined</span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        <i class="feather-check me-3"></i>
+                                        <span>Accepted</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        <i class="feather-briefcase me-3"></i>
+                                        <span>Leads</span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        <i class="feather-wifi-off me-3"></i>
+                                        <span>Expired</span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        <i class="feather-users me-3"></i>
+                                        <span>Customers</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <a class="btn btn-icon btn-light-brand" data-bs-toggle="dropdown" data-bs-offset="0, 10" data-bs-auto-close="outside">
+                                    <i class="feather-paperclip"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        <i class="bi bi-filetype-pdf me-3"></i>
+                                        <span>PDF</span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        <i class="bi bi-filetype-csv me-3"></i>
+                                        <span>CSV</span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        <i class="bi bi-filetype-xml me-3"></i>
+                                        <span>XML</span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        <i class="bi bi-filetype-txt me-3"></i>
+                                        <span>Text</span>
+                                    </a>
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        <i class="bi bi-filetype-exe me-3"></i>
+                                        <span>Excel</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="javascript:void(0);" class="dropdown-item">
+                                        <i class="bi bi-printer me-3"></i>
+                                        <span>Print</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="invoice-view.html" class="btn btn-primary">
+                                <i class="feather-plus me-2"></i>
+                                <span>Check Bill</span>
+                            </a>
+                        </div>
                     </div>
                     <div class="d-md-none d-flex align-items-center">
                         <a href="javascript:void(0)" class="page-header-right-open-toggle">
@@ -1742,12 +1829,79 @@
                     </div>
                 </div>
             </div>
-
-
+            <div id="collapseOne" class="accordion-collapse collapse page-header-collapse">
+                <div class="accordion-body pb-2">
+                    <div class="row">
+                        <div class="col-xxl-3 col-md-6">
+                            <div class="card stretch stretch-full">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <a href="javascript:void(0);" class="fw-bold d-block">
+                                            <span class="d-block">Paid</span>
+                                            <span class="fs-20 fw-bold d-block">78/100</span>
+                                        </a>
+                                        <div class="badge bg-soft-success text-success">
+                                            <i class="feather-arrow-up fs-10 me-1"></i>
+                                            <span>36.85%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-md-6">
+                            <div class="card stretch stretch-full">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <a href="javascript:void(0);" class="fw-bold d-block">
+                                            <span class="d-block">Unpaid</span>
+                                            <span class="fs-20 fw-bold d-block">38/50</span>
+                                        </a>
+                                        <div class="badge bg-soft-danger text-danger">
+                                            <i class="feather-arrow-down fs-10 me-1"></i>
+                                            <span>23.45%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-md-6">
+                            <div class="card stretch stretch-full">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <a href="javascript:void(0);" class="fw-bold d-block">
+                                            <span class="d-block">Overdue</span>
+                                            <span class="fs-20 fw-bold d-block">15/30</span>
+                                        </a>
+                                        <div class="badge bg-soft-success text-success">
+                                            <i class="feather-arrow-up fs-10 me-1"></i>
+                                            <span>25.44%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-md-6">
+                            <div class="card stretch stretch-full">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <a href="javascript:void(0);" class="fw-bold d-block">
+                                            <span class="d-block">Draft</span>
+                                            <span class="fs-20 fw-bold d-block">3/10</span>
+                                        </a>
+                                        <div class="badge bg-soft-danger text-danger">
+                                            <i class="feather-arrow-down fs-10 me-1"></i>
+                                            <span>12.68%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- [ page-header ] end -->
-
-
- <div class="px-4 row justify-content-between">
+            <!-- [ Main Content ] start -->
+               <div class="px-4 row justify-content-between">
                                     <div class="col-xl-3">
                                         <div class="form-group mb-3">
                                            <p>
@@ -1755,168 +1909,225 @@
                                 <span class="input-group-text">
                                     <i class="feather-search fs-6 text-muted"></i>
                                 </span>
-                                <input type="text" class="form-control search-input-field" placeholder="Search Patient By MRN ..." />
+                                <input type="text" class="form-control search-input-field" placeholder="Search Patient by MRN ..." />
                                 <span class="input-group-text">
                                   Search
                                 </span>
                             </div>
 
-                      </p>
-         
-                 </div>
-          </div>
+</p>
 
-            <!-- [ Main Content ] start -->
+                                      
+                                        </div>
+                                    </div>
+
             <div class="main-content">
                 <div class="row">
-                    <div class="col-xl-8">
-                        <div class="card invoice-container">
-                            <div class="card-header">
-                                <h5>Direct Dispensing </h5>
+                    <div class="col-lg-12">
+                        <div class="card stretch stretch-full">
+                            <div class="card-body p-0">
+
+
+
+
                                 
+                                <div class="table-responsive">
+                                    <table class="table table-hover" id="paymentList">
+                                        <thead>
+                                            <tr>
+                                                <th class="wd-30">
+                                                    <div class="btn-group mb-1">
+                                                        <div class="custom-control custom-checkbox ms-1">
+                                                            <input type="checkbox" class="custom-control-input" id="checkAllPayment">
+                                                            <label class="custom-control-label" for="checkAllPayment"></label>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                <th>MRN</th>
+                                                <th>Patient Name</th>
+                                                <th>Department</th>
+                                                <th>Cost Sharing</th>
+                                             
+                                                <th><small>Created By</small></th>
+                                                <th class="text-end">Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="single-item">
+                                                <td>
+                                                    <div class="item-checkbox ms-1">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input checkbox" id="checkBox_1">
+                                                            <label class="custom-control-label" for="checkBox_1"></label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td><a href="invoice-view.html" class="fw-bold">00-32-98</a></td>
+                                                <td>
+                                                    <a href="javascript:void(0)" class="hstack gap-3">
+                                                       
+                                                        <div>
+                                                            <span class="text-truncate-1-line">Abdallah Juma</span>
+                                                            
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="fw-bold text-dark">OPD Dept</td>
+                                                <td>Self Referral</td>
+            
+                                                <td>
+                                                    <div class="badge bg-soft-success text-success">Fridolin Anthony</div>
+                                                </td>
+                                                <td>
+                                                    <div class="hstack gap-2 justify-content-end">
+                                                        <a href="invoice-view.html" class="avatar-text avatar-md">
+                                                            <i class="feather feather-eye"></i>
+                                                        </a>
+                                                        <div class="dropdown">
+                                                            <a href="javascript:void(0)" class="avatar-text avatar-md" data-bs-toggle="dropdown" data-bs-offset="0,21">
+                                                                <i class="feather feather-more-horizontal"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu">
+                                                                <li>
+                                                                    <a class="dropdown-item" href="prescription.html">
+                                                                        <i class="feather feather-edit-3 me-3"></i>
+                                                                        <span>View Prescribed Items</span>
+                                                                    </a>
+                                                                </li>
+                                                                
+                                                                <li>
+                                                                    <a class="dropdown-item" href="patienthistory.html">
+                                                                        <i class="feather feather-clock me-3"></i>
+                                                                        <span>View Patient History</span>
+                                                                    </a>
+                                                                </li>
+                                                                                                                            
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="single-item">
+                                                <td>
+                                                    <div class="item-checkbox ms-1">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input checkbox" id="checkBox_2">
+                                                            <label class="custom-control-label" for="checkBox_2"></label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td><a href="invoice-view.html" class="fw-bold">02-67-12</a></td>
+                                                <td>
+                                                    <a href="javascript:void(0)" class="hstack gap-3">
+                                                        
+                                                        <div>
+                                                            <span class="text-truncate-1-line">Nancy Emmanuel</span>
+                                                         
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="fw-bold text-dark">Post Natal</td>
+                                                <td>NHIF</td>
+                                <td>
+                                                    <div class="badge bg-soft-success text-success">Juma Abdallah</div>
+                                                </td>
+                                                <td>
+                                                    <div class="hstack gap-2 justify-content-end">
+                                                        <a href="invoice-view.html" class="avatar-text avatar-md">
+                                                            <i class="feather feather-eye"></i>
+                                                        </a>
+                                                        <div class="dropdown">
+                                                            <a href="javascript:void(0)" class="avatar-text avatar-md" data-bs-toggle="dropdown" data-bs-offset="0,21">
+                                                                <i class="feather feather-more-horizontal"></i>
+                                                            </a>
+                                                                 <ul class="dropdown-menu">
+                                                                <li>
+                                                                    <a class="dropdown-item" href="javascript:void(0)">
+                                                                        <i class="feather feather-edit-3 me-3"></i>
+                                                                        <span>View Prescribed Items</span>
+                                                                    </a>
+                                                                </li>
+                                                               
+                                                                <li>
+                                                                    <a class="dropdown-item" href="javascript:void(0)">
+                                                                        <i class="feather feather-clock me-3"></i>
+                                                                        <span>View Patient History</span>
+                                                                    </a>
+                                                                </li>
+                                                               
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="single-item">
+                                                <td>
+                                                    <div class="item-checkbox ms-1">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input checkbox" id="checkBox_3">
+                                                            <label class="custom-control-label" for="checkBox_3"></label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td><a href="invoice-view.html" class="fw-bold">01-22-56</a></td>
+                                                <td>
+                                                    <a href="javascript:void(0)" class="hstack gap-3">
+                                                       
+                                                        <div>
+                                                            <span class="text-truncate-1-line">Grace John</span>
+                                                         
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="fw-bold text-dark">Labour</td>
+                                                <td>Above 60</td>
+                                                
+                                                 <td>
+                                                    <div class="badge bg-soft-success text-success">Jasmine Urassa</div>
+                                                </td>
+                                                <td>
+                                                    <div class="hstack gap-2 justify-content-end">
+                                                        <a href="invoice-view.html" class="avatar-text avatar-md">
+                                                            <i class="feather feather-eye"></i>
+                                                        </a>
+                                                        <div class="dropdown">
+                                                            <a href="javascript:void(0)" class="avatar-text avatar-md" data-bs-toggle="dropdown" data-bs-offset="0,21">
+                                                                <i class="feather feather-more-horizontal"></i>
+                                                            </a>
+                                                                  <ul class="dropdown-menu">
+                                                                <li>
+                                                                    <a class="dropdown-item" href="javascript:void(0)">
+                                                                        <i class="feather feather-edit-3 me-3"></i>
+                                                                        <span>View Prescribed Items</span>
+                                                                    </a>
+                                                                </li>
+                                                               
+                                                                <li>
+                                                                    <a class="dropdown-item" href="javascript:void(0)">
+                                                                        <i class="feather feather-clock me-3"></i>
+                                                                        <span>View Patient History</span>
+                                                                    </a>
+                                                                </li>
+                                                                
+                                                                
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                          
+                                        
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
-<p>
-                         <div class="px-4 row justify-content-between">
-                                    <div class="col-xl-3">
-                                        <div class="form-group mb-3">
-                                          
-                                           <label for="InvoiceLabel" class="form-label">Store Name:</label> 
-           
-                                           <select id="largeSelect" class="form-select form-select-lg" required>
-                             <option><font size=2>Select Store Name</font></option>
-                            <option value="insurance">Main Store</option>
-                            <option value="exemption">Laboratory Store</option>
-                            <option value="userfee">Labour Store</option>
-                                  <option value="userfee">OPD Unit</option>
-                                              <option value="userfee">Dispensing Unit</option>
-                               <option value="userfee">Post Natal Store</option>
-                                           <option value="userfee">Theatre Store</option>
-                                            <option value="userfee">Eye Store</option>
-                                          <option value="userfee">Dental Store</option>
-                                        <option value="userfee">Ante Natal Store</option>
-                                            </select>
-  
-                                        </div>
-                                    </div>
-
-                                </p>
-
-                             
-
-                             <div class="col-xl-3">
-                                        <div class="form-group mb-3">
-                                            <label for="InvoiceNumber" class="form-label">Pharmacy Item:</label>
-                                            <input type="number" class="form-control" id="InvoiceNumber" placeholder="Search Pharmacy Item ...">
-                                        </div>
-                                    </div>
-
-                             <div class="col-xl-3">
-                                        <div class="form-group mb-3">
-                                            <label for="InvoiceNumber" class="form-label">Batch:</label>
-                                           <select id="largeSelect" class="form-select form-select-lg" required>
-                             <option><font size=2>Select Batch</font></option>
-                            <option value="insurance">BN12345</option>
-                            <option value="exemption">20230101-L01</option>
-                            <option value="userfee">TT1606001</option>
-
-                          <option value="insurance">4000030090</option>
-                            <option value="exemption">NH2007</option>
-                            <option value="userfee">K1636</option>
-
-                            <option value="insurance">22J137</option>
-                            <option value="exemption">MSD306</option>
-                            <option value="userfee">XG11323</option>
-
-                            <option value="insurance">083J023</option>
-                            <option value="exemption">BJ4468846</option>
-                            <option value="userfee">45231102</option>
-
-                            <option value="insurance">0Q2020</option>
-                            <option value="exemption">20230101-L01</option>
-                            <option value="userfee">VICI0001533</option>
-
-                            <option value="insurance">C54-0822</option>
-                            <option value="exemption">76088</option>
-                            <option value="userfee">020125</option>
-
-                            <option value="insurance">1362954</option>
-                            <option value="exemption">V759752</option>
-                            <option value="userfee">bh656dg</option>
- <option value="userfee">1213721</option>
-
-
-
-
-
-
-
-
-                                            </select>
-                                        </div>
-                                    </div>
- <div class="col-xl-3">
-                                        <div class="form-group mb-3">
-                                            <label for="InvoiceNumber" class="form-label">Batch Balance:</label>
-                                            <input type="number" class="form-control" id="InvoiceNumber" placeholder="Batch Balance">
-                                        </div>
-                                    </div>
-
-<div class="px-4 row justify-content-between">
-                                    <div class="col-xl-3">
-                                        <div class="form-group mb-3">
-                                          
-                                          <label for="html5-datetime-local-input" class="col-md-2 col-form-label"></label>
-                <div class="col-md-10">
-                 <a href="javascript:void(0);" class="badge bg-soft-success text-success">Date:</a>
-                                <input
-                    class="form-control"
-                    type="datetime-local"
-                    
-                    id="html5-datetime-local-input"
-                    required
-                  />
-                </div>        </div>
-                                    </div>
-                                    
- 
-                                      <hr class="border-dashed">
-<div class="px-4 row justify-content-between">
-                                    <div class="col-xl-3">
-                                        <div class="form-group mb-3">
-                                          
-                                           <label for="InvoiceLabel" class="form-label">Did You Confirm this Direct Dispensing?</label>  <form>
- 
-  <label>
-   <p> <input type="radio" name="choice" value="option1"> Yes
-  </p></label>
-  <br>
-  <label>
-    <p>
-    <input type="radio" name="choice" value="option2"> No
-    </p>
-  </label>
-</form>
-                                        </div>
-                                    </div>
-
-                      <p>
-         <div class="d-flex align-items-center gap-2 page-header-right-items-wrapper">
-                 <a href="javascript:void(0);" class="btn btn-light-brand successAlertMessage">
-                        <i class="feather-layers me-2"></i>
-                             <span>Cancel</span>
-                        </a>
-                     <a href="directdispensing.html" class="btn btn-primary">
-                  <i class="feather-save me-2"></i>
-                        <span>Dispense</span>
-                             </a>
-                                </div>
-                                     </div>
-                                        </p>
-                                    </div>
-                                </div>
-                        
-                                
-      <!-- [ Footer ] start -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- [ Main Content ] end -->
+        </div>
+        <!-- [ Footer ] start -->
         <footer class="footer">
             <p class="fs-11 text-muted fw-medium text-uppercase mb-0 copyright">
                 <span>Copyright ©</span>
@@ -1978,9 +2189,6 @@
                         </div>
                         <div class="col-6 text-center single-option">
                             <input type="radio" class="btn-check" id="app-header-dark" name="app-header" value="2" data-app-header="app-header-dark" />
-                         
-                         
-                         
                             <label class="py-2 fs-9 fw-bold text-dark text-uppercase text-spacing-1 border border-gray-2 w-100 h-100 c-pointer position-relative options-label" for="app-header-dark">Dark</label>
                         </div>
                     </div>
