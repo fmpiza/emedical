@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 25, 2026 at 04:19 PM
+-- Generation Time: Feb 26, 2026 at 12:42 PM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.4
 
@@ -95,6 +95,19 @@ CREATE TABLE `caesareansectionreport` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `cancelledbiilreport`
+--
+
+CREATE TABLE `cancelledbiilreport` (
+  `startdate` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `enddate` timestamp(6) NOT NULL DEFAULT '0000-00-00 00:00:00.000000',
+  `sharingname` varchar(100) NOT NULL,
+  `sharinggroup` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `cardverification`
 --
 
@@ -105,6 +118,19 @@ CREATE TABLE `cardverification` (
   `visitype` varchar(20) NOT NULL,
   `biometricmethod` varchar(20) NOT NULL,
   `identifiercard` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `clientattendance`
+--
+
+CREATE TABLE `clientattendance` (
+  `startdate` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `enddate` timestamp(6) NOT NULL DEFAULT '0000-00-00 00:00:00.000000',
+  `newpatients` int(20) NOT NULL,
+  `reattendancepatients` int(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -128,6 +154,43 @@ CREATE TABLE `ctc` (
 --
 
 CREATE TABLE `deliveryreport` (
+  `startdate` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `enddate` timestamp(6) NOT NULL DEFAULT '0000-00-00 00:00:00.000000',
+  `sharingname` varchar(100) NOT NULL,
+  `sharinggroup` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `departmentalregistration`
+--
+
+CREATE TABLE `departmentalregistration` (
+  `startdate` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `enddate` timestamp(6) NOT NULL DEFAULT '0000-00-00 00:00:00.000000'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `departmentalreport`
+--
+
+CREATE TABLE `departmentalreport` (
+  `startdate` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `enddate` timestamp(6) NOT NULL DEFAULT '0000-00-00 00:00:00.000000',
+  `sharingname` varchar(100) NOT NULL,
+  `sharinggroup` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `detailedreport`
+--
+
+CREATE TABLE `detailedreport` (
   `startdate` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
   `enddate` timestamp(6) NOT NULL DEFAULT '0000-00-00 00:00:00.000000',
   `sharingname` varchar(100) NOT NULL,
@@ -187,6 +250,19 @@ CREATE TABLE `dispensingregister` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `employeecashreport`
+--
+
+CREATE TABLE `employeecashreport` (
+  `startdate` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `enddate` timestamp(6) NOT NULL DEFAULT '0000-00-00 00:00:00.000000',
+  `sharingname` varchar(100) NOT NULL,
+  `sharinggroup` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `endclientvisit`
 --
 
@@ -196,6 +272,19 @@ CREATE TABLE `endclientvisit` (
   `category` varchar(20) NOT NULL,
   `date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
   `status` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `exemptiondetailedreport`
+--
+
+CREATE TABLE `exemptiondetailedreport` (
+  `startdate` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `enddate` timestamp(6) NOT NULL DEFAULT '0000-00-00 00:00:00.000000',
+  `sharingname` varchar(100) NOT NULL,
+  `sharinggroup` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -215,6 +304,19 @@ CREATE TABLE `exemptionpatients` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `exemptionreport`
+--
+
+CREATE TABLE `exemptionreport` (
+  `startdate` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `enddate` timestamp(6) NOT NULL DEFAULT '0000-00-00 00:00:00.000000',
+  `sharingname` varchar(100) NOT NULL,
+  `sharinggroup` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `facilitystorereport`
 --
 
@@ -222,6 +324,19 @@ CREATE TABLE `facilitystorereport` (
   `startdate` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
   `enddate` timestamp(6) NOT NULL DEFAULT '0000-00-00 00:00:00.000000',
   `category` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `hospitalshopreport`
+--
+
+CREATE TABLE `hospitalshopreport` (
+  `startdate` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `enddate` timestamp(6) NOT NULL DEFAULT '0000-00-00 00:00:00.000000',
+  `sharingname` varchar(100) NOT NULL,
+  `sharinggroup` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -307,6 +422,32 @@ CREATE TABLE `itimrreport` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `labgeneraltestreport`
+--
+
+CREATE TABLE `labgeneraltestreport` (
+  `startdate` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `enddate` timestamp(6) NOT NULL DEFAULT '0000-00-00 00:00:00.000000',
+  `sharingname` varchar(100) NOT NULL,
+  `sharinggroup` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `labmonthlyreport`
+--
+
+CREATE TABLE `labmonthlyreport` (
+  `startdate` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `enddate` timestamp(6) NOT NULL DEFAULT '0000-00-00 00:00:00.000000',
+  `sharingname` varchar(100) NOT NULL,
+  `sharinggroup` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `laboratoryresultposting`
 --
 
@@ -335,6 +476,19 @@ CREATE TABLE `laboratoryresultreview` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `labregister`
+--
+
+CREATE TABLE `labregister` (
+  `startdate` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `enddate` timestamp(6) NOT NULL DEFAULT '0000-00-00 00:00:00.000000',
+  `sharingname` varchar(100) NOT NULL,
+  `sharinggroup` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `labresultamendment`
 --
 
@@ -345,6 +499,45 @@ CREATE TABLE `labresultamendment` (
   `samplenumber` int(20) NOT NULL,
   `result` varchar(50) NOT NULL,
   `remark` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `labtatreport`
+--
+
+CREATE TABLE `labtatreport` (
+  `startdate` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `enddate` timestamp(6) NOT NULL DEFAULT '0000-00-00 00:00:00.000000',
+  `sharingname` varchar(100) NOT NULL,
+  `sharinggroup` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `labtestcountreport`
+--
+
+CREATE TABLE `labtestcountreport` (
+  `startdate` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `enddate` timestamp(6) NOT NULL DEFAULT '0000-00-00 00:00:00.000000',
+  `sharingname` varchar(100) NOT NULL,
+  `sharinggroup` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `labtestperagegenderreport`
+--
+
+CREATE TABLE `labtestperagegenderreport` (
+  `startdate` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `enddate` timestamp(6) NOT NULL DEFAULT '0000-00-00 00:00:00.000000',
+  `sharingname` varchar(100) NOT NULL,
+  `sharinggroup` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -383,6 +576,19 @@ CREATE TABLE `mainstorereport` (
   `startdate` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
   `enddate` timestamp(6) NOT NULL DEFAULT '0000-00-00 00:00:00.000000',
   `category` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `malariareport`
+--
+
+CREATE TABLE `malariareport` (
+  `startdate` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `enddate` timestamp(6) NOT NULL DEFAULT '0000-00-00 00:00:00.000000',
+  `sharingname` varchar(100) NOT NULL,
+  `sharinggroup` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -662,6 +868,33 @@ CREATE TABLE `rchpatients` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `reattendancepatients`
+--
+
+CREATE TABLE `reattendancepatients` (
+  `startdate` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `enddate` timestamp(6) NOT NULL DEFAULT '0000-00-00 00:00:00.000000',
+  `childrenunder5` int(20) NOT NULL,
+  `chronicdiseases` int(20) NOT NULL,
+  `eldersabove60` int(20) NOT NULL,
+  `NHIF` int(20) NOT NULL,
+  `selfreferral` int(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `referralreport`
+--
+
+CREATE TABLE `referralreport` (
+  `startdate` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `enddate` timestamp(6) NOT NULL DEFAULT '0000-00-00 00:00:00.000000'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `registeredpatients`
 --
 
@@ -710,6 +943,19 @@ CREATE TABLE `samplecollection` (
   `category` varchar(100) NOT NULL,
   `createdat` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
   `createdby` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `servicebasedreport`
+--
+
+CREATE TABLE `servicebasedreport` (
+  `startdate` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `enddate` timestamp(6) NOT NULL DEFAULT '0000-00-00 00:00:00.000000',
+  `sharingname` varchar(100) NOT NULL,
+  `sharinggroup` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -827,6 +1073,17 @@ CREATE TABLE `triage` (
   `pulserate` int(20) NOT NULL,
   `MUAC` int(20) NOT NULL,
   `oxygensaturation` int(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `unpaidbillsreport`
+--
+
+CREATE TABLE `unpaidbillsreport` (
+  `startdate` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `enddate` timestamp(6) NOT NULL DEFAULT '0000-00-00 00:00:00.000000'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
