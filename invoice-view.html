@@ -1918,6 +1918,8 @@
                                    
                                 </div>
                             </div>
+                             <form method="post" action="pendingbills.php">
+                               
                             <div class="card-body p-0">
                                 <div class="px-4 pt-4">
                                     <div class="d-sm-flex align-items-center justify-content-between">
@@ -1926,23 +1928,74 @@
 <div class="px-4 row justify-content-between">
                                     <div class="col-xl-3">
                                         <div class="form-group mb-3">
+                                           <p>  
+                                            <select id="largeSelect" type="number" name="id" class="form-select form-select-lg" required>
+                    
+                               <option><font size=2>Select Access</font></option>
+                                  <option value="1">Accept</option>
+                                      <option value="0">Reject</option>
+                                   
+                                </select>
+                                </p>
+
+                                 <p>  
+                                            <select id="largeSelect" type="number" name="consultationbill" class="form-select form-select-lg" required>
+                    
+                               <option><font size=2>Consultation Bill</font></option>
+                                  <option value="10000">Accept</option>
+                                      <option value="0000">Reject</option>
+                                   
+                                </select>
+                                </p>
+                                 <p>  
+                                            <select id="largeSelect" type="number" name="investigationbill" class="form-select form-select-lg" required>
+                    
+                               <option><font size=2>Investigation Bill</font></option>
+                                  <option value="15000">Accept</option>
+                                      <option value="0">Reject</option>
+                                   
+                                </select>
+                                </p>
+                                  <p>  
+                                            <select id="largeSelect" type="number" name="medicationbill" class="form-select form-select-lg" required>
+                    
+                               <option><font size=2>Medication Bill</font></option>
+                                  <option value="0000">Accept</option>
+                                      <option value="5000">Reject</option>
+                                   
+                                </select>
+                                </p>
+                                 <p>  
+                                            <select id="largeSelect" type="number" name="procedurebill" class="form-select form-select-lg" required>
+                    
+                               <option><font size=2>Procedure Bill</font></option>
+                                  <option value="250000">Accept</option>
+                                      <option value="000">Reject</option>
+                                   
+                                </select>
+                                </p>
+
+                                
                                            <p>
+                                            
         <div class="input-group search-form">
                                 <span class="input-group-text">
-                                    <i class="feather-search fs-6 text-muted"></i>
+                                   
                                 </span>
-                                <input type="number" class="form-control search-input-field" placeholder="Search Patient by MRN ..." />
-                                <span class="input-group-text">
-                                  Search
-                                </span>
+                                <input type="text" name="mrn" class="form-control search-input-field" placeholder="Search Patient by MRN ..." />
+                              
+                                  <button class="btn btn-primary" type="submit" value="Submit Form"> <i class="feather-search fs-6 text-muted"></i>  Search</button> 
+        
+                                
                             </div>
+                          
 
-</p>
+                                    </p>
 
                                       
                                         </div>
                                     </div>
-
+                     </form>
 
 
 
